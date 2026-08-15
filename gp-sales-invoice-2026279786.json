@@ -1,0 +1,2482 @@
+[
+  {
+    "name": "ACECLOFENAC 100MG AND PARACETAMOL 325MG TABLETS",
+    "batch": "PRT-260304",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.25,
+    "sell": 9.38,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Pregabalin Tablets 75 mg",
+    "batch": "C-2506042",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 13.75,
+    "sell": 20.63,
+    "expiry": "2027-05-31"
+  },
+  {
+    "name": "CHLORZOXAZONE 500MG, DICLOFENAC 50MG AND PARACETAMOL 325MG",
+    "batch": "PRT2602-20",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 15.63,
+    "sell": 23.44,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "DICLOFENAC GEL IP (DICLOFENAC DIETHYLAMINE 1.16%W/W)",
+    "batch": "GS-2616",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 7.5,
+    "sell": 11.25,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "DICLOFENAC SODIUM PROLONGED RELEASE TABLETS IP",
+    "batch": "IC2TG024",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 7.56,
+    "sell": 11.34,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Diclofenac Gastro-Resistant Tablets IP 50 mg",
+    "batch": "DOFT-1004",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 3.44,
+    "sell": 5.16,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Etoricoxib Tablets IP 90 mg",
+    "batch": "310826006",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 19.37,
+    "sell": 29.06,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Ibuprofen 400mg and Paracetamol 325mg Tablets IP",
+    "batch": "C25I946007",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 5.0,
+    "sell": 7.5,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Azithromycin Tablets IP 250 mg",
+    "batch": "AM260203",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 28.13,
+    "sell": 42.19,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "Nimesulide 100mg and Paracetamol 325mg Tablets",
+    "batch": "STG26116",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.87,
+    "sell": 10.31,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Nimesulide Tablets 100 mg",
+    "batch": "NMST-1023",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.13,
+    "sell": 6.19,
+    "expiry": "2028-12-31"
+  },
+  {
+    "name": "Diclofenac Sodium 50mg and Paracetamol 325mg Tablets IP",
+    "batch": "DSPT-1154",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.19,
+    "sell": 9.28,
+    "expiry": "2029-01-31"
+  },
+  {
+    "name": "Paracetamol Tablets IP 500 mg",
+    "batch": "TJA-252542",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.37,
+    "sell": 6.56,
+    "expiry": "2028-09-30"
+  },
+  {
+    "name": "METFORMIN HYDROCHLORIDE 500MG(SR)& GLIMEPIRIDE 2MG",
+    "batch": "GMTT-1078",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 16.5,
+    "sell": 24.75,
+    "expiry": "2028-05-31"
+  },
+  {
+    "name": "AMOXYCILLIN 500MG AND POTASSIUM CLAVULANATE 125MG TABLETS IP",
+    "batch": "BT260198",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 35.06,
+    "sell": 52.59,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "Amoxycillin Capsules IP 250mg",
+    "batch": "BC250184",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 8.25,
+    "sell": 12.38,
+    "expiry": "2027-10-31"
+  },
+  {
+    "name": "Amoxycillin Capsules IP 500mg",
+    "batch": "GC5183",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 21.87,
+    "sell": 32.81,
+    "expiry": "2027-12-31"
+  },
+  {
+    "name": "Cefixime Tablets IP 200 mg",
+    "batch": "CFP-169",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 33.13,
+    "sell": 49.69,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Cefpodoxime Tablets IP 200 mg",
+    "batch": "6207008",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 43.75,
+    "sell": 65.63,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Azithromycin Tablets IP 500 mg",
+    "batch": "AMA260202",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 26.25,
+    "sell": 39.38,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "Cefuroxime Axetil Tablets IP 500 mg",
+    "batch": "CT260362",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 88.75,
+    "sell": 133.13,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Clotrimazole Cream IP 1% w/w 15g",
+    "batch": "6124",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 9.63,
+    "sell": 14.44,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Levofloxacin Tablets IP 500mg",
+    "batch": "AX26001H1",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 20.63,
+    "sell": 30.94,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Ofloxacin 200mg and Ornidazole 500mg Tablets IP",
+    "batch": "TJA-260668",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 17.19,
+    "sell": 25.78,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Ofloxacin Tablets IP 200mg",
+    "batch": "CT25262582",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 8.75,
+    "sell": 13.13,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Beclomethasone Dipropionate 0.025%w/w, Clotrimazole 1%w/w an",
+    "batch": "1359CG",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 12.5,
+    "sell": 18.75,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Clobetasol Propionate Cream IP 0.05 % w/w",
+    "batch": "6O42",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 9.37,
+    "sell": 14.06,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Povidone Iodine Ointment 5% w/w 15 gm biodea",
+    "batch": "2509131",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 9.63,
+    "sell": 14.44,
+    "expiry": "2027-08-31"
+  },
+  {
+    "name": "Gliclazide Tablets IP 40 mg",
+    "batch": "MT261032",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 9.63,
+    "sell": 14.44,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Glimepiride Tablets IP 1mg",
+    "batch": "PRT2604-01",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 2.75,
+    "sell": 4.13,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Glimepiride Tablets IP 2mg",
+    "batch": "PRT2603-37",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 3.44,
+    "sell": 5.16,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Soluble Insulin Injection IP (Regular) (Recombinant DNA orig",
+    "batch": "A032615038",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 52.06,
+    "sell": 78.1,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Insulin Injection IP (Insulin Human Soluble 30% and",
+    "batch": "V26ITF4022",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 60.0,
+    "sell": 90.0,
+    "expiry": "2029-04-30"
+  },
+  {
+    "name": "Metformin Hydrochloride Sustained Release Tablets IP 1000 mg",
+    "batch": "260260",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 8.25,
+    "sell": 12.38,
+    "expiry": "2028-09-30"
+  },
+  {
+    "name": "Bisacodyl Tablets IP 5mg",
+    "batch": "QBCJT-002",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 3.75,
+    "sell": 5.63,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Famotidine Tablets IP 40 mg",
+    "batch": "FBT1311",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 3.03,
+    "sell": 4.54,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Lactic Acid Bacillus Tablets 60 Million spores",
+    "batch": "TLAB-029",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.81,
+    "sell": 7.22,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Dried Aluminium Hydroxide 250mg, Magnesium Hydroxide 250mg a 170ML",
+    "batch": "ML260315",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 20.0,
+    "sell": 30.0,
+    "expiry": "2028-05-31"
+  },
+  {
+    "name": "Metronidazole Tablets IP 400mg",
+    "batch": "GT50775",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.38,
+    "sell": 6.56,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Omeprazole 20mg and Domperidone 10mg Capsules IP",
+    "batch": "OPDC-1028",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.87,
+    "sell": 10.31,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Omeprazole Gastro-resistant Capsules IP 20 mg",
+    "batch": "OMPC-1206",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.19,
+    "sell": 9.28,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Pantoprazole Gastro Resistant Tablets IP 40 mg",
+    "batch": "THE26009H1",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 7.56,
+    "sell": 11.34,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Rabeprazole Gastro Resistant Tablets IP 20 mg",
+    "batch": "TRA607",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 5.5,
+    "sell": 8.25,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Ranitidine Tablets IP 300 mg",
+    "batch": "RNBT1404",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 8.12,
+    "sell": 12.19,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Calcium 500mg and Vitamin D3 250IU Tablets IP",
+    "batch": "QJCT-017",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.81,
+    "sell": 7.22,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Budesonide Respules 0.5 mg per",
+    "batch": "2677015PM",
+    "supplier": "G.P.SALES",
+    "qty": 25,
+    "minstock": 10,
+    "purchase": 8.25,
+    "sell": 12.38,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Cetrizine Hydrochloride Tablets IP 10mg",
+    "batch": "Z26-400",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 3.44,
+    "sell": 5.16,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Etophyllin 77mg and Theophylline 23mg Tablets",
+    "batch": "ET260401",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 3.12,
+    "sell": 4.69,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Fexofenadine Tablets IP 120 mg",
+    "batch": "26S2GTA224",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 15.0,
+    "sell": 22.5,
+    "expiry": "2027-12-31"
+  },
+  {
+    "name": "Levocetrizine Tablets IP 5 mg",
+    "batch": "PRT2603-119",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.81,
+    "sell": 7.22,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Montelukast Sodium 10mg and Levocetirizine 5mg Tablets IP",
+    "batch": "310226009",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 12.5,
+    "sell": 18.75,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Salbutamol Inhalation IP 100mcg per puff",
+    "batch": "IE26146",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 34.37,
+    "sell": 51.56,
+    "expiry": "2029-04-30"
+  },
+  {
+    "name": "Amlodipine 5mg and Atenolol 50mg Tablets",
+    "batch": "AMAT-1098",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.37,
+    "sell": 6.56,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Atenolol Tablets IP 50 mg",
+    "batch": "ATOT-1004",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.13,
+    "sell": 6.19,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Atorvastatin Tablets IP 10mg",
+    "batch": "BRF10126A",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 5.5,
+    "sell": 8.25,
+    "expiry": "2028-09-30"
+  },
+  {
+    "name": "Atorvastatin Tablets IP 20mg",
+    "batch": "CT25261357",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 7.56,
+    "sell": 11.34,
+    "expiry": "2027-10-31"
+  },
+  {
+    "name": "Clonidine Tablets IP 0.1 mg",
+    "batch": "T-2603281",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.87,
+    "sell": 10.31,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Clopidogrel Tablets IP 75mg",
+    "batch": "CPGT1277",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 11.69,
+    "sell": 17.53,
+    "expiry": "2026-11-30"
+  },
+  {
+    "name": "Enalapril Tablets IP 5 mg",
+    "batch": "TE-200035",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 3.44,
+    "sell": 5.16,
+    "expiry": "2027-02-28"
+  },
+  {
+    "name": "Frusemide Tablets IP 40 mg",
+    "batch": "TFU403",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 3.13,
+    "sell": 4.69,
+    "expiry": "2027-08-31"
+  },
+  {
+    "name": "Losartan Tablets IP 25mg",
+    "batch": "PRT2603-124",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.81,
+    "sell": 7.22,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Metoprolol Tablets IP 25 mg",
+    "batch": "CT26270263",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.12,
+    "sell": 6.19,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Metoprolol Extended release Tablets IP 50mg",
+    "batch": "MPRMT-1078",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.19,
+    "sell": 9.28,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "Ramipril Tablets IP 2.5 mg",
+    "batch": "BPRA26002",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.81,
+    "sell": 7.22,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Telmisartan 40mg and Hydrochlorothiazide 12.5mg Tablets IP",
+    "batch": "PRT2603-84",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 10.63,
+    "sell": 15.94,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Telmisartan Tablets IP 20mg",
+    "batch": "PRT-260501",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.87,
+    "sell": 10.31,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Telmisartan Tablets IP 40mg",
+    "batch": "TEP26019H1",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 7.5,
+    "sell": 11.25,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Alprazolam Tablets IP 0.25 mg",
+    "batch": "ARZMT-1022",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 2.75,
+    "sell": 4.13,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Escitalopram Tablets IP 10 mg",
+    "batch": "MT260337",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.25,
+    "sell": 9.38,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Fluoxetine Hydrochloride Capsules IP 20mg",
+    "batch": "CC25260294",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 5.5,
+    "sell": 8.25,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Prednisolone Tablets IP 5 mg",
+    "batch": "PDNT-1009",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 5.0,
+    "sell": 7.5,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Prednisolone Tablets IP 10 mg",
+    "batch": "PRDT-1060",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 5.62,
+    "sell": 8.44,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Thyroxine Sodium Tablets IP 100 mcg",
+    "batch": "16260466A",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 42.63,
+    "sell": 63.94,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Allopurinol Tablets IP 100 mg",
+    "batch": "Z26-334",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.87,
+    "sell": 10.31,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Carboxymethylcellulose Sodium Eye Drops IP 0.5% w/v",
+    "batch": "WEEX26010A",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 16.5,
+    "sell": 24.75,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Ciprofloxacin Eye Drops IP 0.3% w/v",
+    "batch": "Z26-369",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 4.38,
+    "sell": 6.56,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Xylometazoline Nasal Drops IP 0.1%w/v",
+    "batch": "Z26-371",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 8.25,
+    "sell": 12.38,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Insulin Glargine Injection IP 100 IU per",
+    "batch": "QAB10103",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 226.67,
+    "sell": 340.0,
+    "expiry": "2029-12-31"
+  },
+  {
+    "name": "Gliclazide Extended release Tablets 60 mg",
+    "batch": "BNZ06AGB",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 27.5,
+    "sell": 41.25,
+    "expiry": "2029-02-28"
+  },
+  {
+    "name": "Voglibose Tablets IP 0.2 mg",
+    "batch": "VLT1310",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 7.56,
+    "sell": 11.34,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "Cefixime 200mg and Ofloxacin 200mg Tablets",
+    "batch": "MBT26088",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 31.63,
+    "sell": 47.44,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Itraconazole Capsules 100 mg",
+    "batch": "294226001",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 15.13,
+    "sell": 22.69,
+    "expiry": "2027-12-31"
+  },
+  {
+    "name": "Rosuvastatin Tablets IP 20 mg",
+    "batch": "310726004",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 17.87,
+    "sell": 26.81,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Nebivolol Tablets IP 5 mg",
+    "batch": "26S2GTA741",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 15.63,
+    "sell": 23.44,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Carvedilol Tablets IP 3.125 mg",
+    "batch": "CT26270302",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.81,
+    "sell": 7.22,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "S(-)Amlodipine Tablets IP 2.5 mg",
+    "batch": "SABT1403",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 7.56,
+    "sell": 11.34,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Atorvastatin 10mg and Fenofibrate 160mg Tablets IP",
+    "batch": "GT260658",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 18.75,
+    "sell": 28.13,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Olmesartan Medoxomil Tablets IP 40 mg",
+    "batch": "CT25262059",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 22.69,
+    "sell": 34.03,
+    "expiry": "2027-12-31"
+  },
+  {
+    "name": "Propranolol Tablets IP 40 mg",
+    "batch": "MT260271",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.13,
+    "sell": 6.19,
+    "expiry": "2027-12-31"
+  },
+  {
+    "name": "Rosuvastatin 10mg and Fenofibrate 160mg Tablets IP",
+    "batch": "T-2604213",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 21.31,
+    "sell": 31.97,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Telmisartan 40mg and Chlorthalidone 12.5mg Tablets",
+    "batch": "PRT2512-17",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 13.75,
+    "sell": 20.63,
+    "expiry": "2027-11-30"
+  },
+  {
+    "name": "Olmesartan Medoxomil 40mg and Hydrochlorothiazide 12.5mg",
+    "batch": "PRT2602-59",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 18.75,
+    "sell": 28.13,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "Metoprolol 50mg (Prolonged release) and",
+    "batch": "BMDT26003",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.87,
+    "sell": 10.31,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Olmesartan 20mg and Amlodipine 5mg Tablets",
+    "batch": "OAMT-1008",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 15.62,
+    "sell": 23.44,
+    "expiry": "2026-12-31"
+  },
+  {
+    "name": "Spironolactone Tablets IP 25 mg",
+    "batch": "SNT1402",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 13.75,
+    "sell": 20.63,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Atorvastatin Tablets IP 40 mg",
+    "batch": "T-2605298",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 13.75,
+    "sell": 20.63,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Mupirocin Ointment IP 2 % w/w 5GM",
+    "batch": "QJ-001",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 31.25,
+    "sell": 46.88,
+    "expiry": "2027-12-31"
+  },
+  {
+    "name": "Pantoprazole 40mg (Gastro-resistant) and Domperidone 30mg (P",
+    "batch": "QPZJC-032",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 13.75,
+    "sell": 20.63,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Ursodeoxycholic Acid Tablets IP 300 mg",
+    "batch": "322026004",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 107.06,
+    "sell": 160.6,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Esomeprazole 40mg (Enteric-Coated) and Domperidone 30mg (Sus",
+    "batch": "PRT-260503",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 13.75,
+    "sell": 20.63,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Pantoprazole 40mg (Enteric Coated) and Levosulpiride 75mg (S",
+    "batch": "GC260276",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 34.37,
+    "sell": 51.56,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Liquid Paraffin 1.25ml, Milk of Magnesia 3.75ml and",
+    "batch": "SLG-260222",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 35.63,
+    "sell": 53.44,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Esomeprazole 40mg (Enteric-coated) and Levosulpiride 75mg (S",
+    "batch": "UGC26056",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 41.25,
+    "sell": 61.88,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Rabeprazole 20mg (Enteric Coated) and Levosulpiride 75mg (Su",
+    "batch": "C-2605007",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 22.5,
+    "sell": 33.75,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Deflazacort Tablets 6 mg",
+    "batch": "LJFW501",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 8.94,
+    "sell": 13.41,
+    "expiry": "2026-12-31"
+  },
+  {
+    "name": "Paracetamol Tablets IP 650 mg",
+    "batch": "PRT2602-73",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 9.37,
+    "sell": 14.06,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "Aceclofenac 100mg, Paracetamol 325mg and Serratiopeptidase",
+    "batch": "GT50702",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 11.87,
+    "sell": 17.81,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "Diclofenac 1.16%w/w, Linceed Oil 3%w/w,",
+    "batch": "ACP063",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 15.0,
+    "sell": 22.5,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Paracetamol 325mg, Phenylephrine 10mg and Chlorpheniramine",
+    "batch": "MT260972",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 13.75,
+    "sell": 20.63,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Levosalbutamol 1.25mg and Ipratropium 500mcg Respules",
+    "batch": "5SN0120",
+    "supplier": "G.P.SALES",
+    "qty": 40,
+    "minstock": 10,
+    "purchase": 5.63,
+    "sell": 8.44,
+    "expiry": "2026-12-31"
+  },
+  {
+    "name": "Montelukast 10mg and Fexofenadine Hydrochloride 120mg Tablet",
+    "batch": "MT261791",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 27.5,
+    "sell": 41.25,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Tamsulosin Hydrochloride 0.4mg and Dutasteride 0.5mg Tablets",
+    "batch": "T-2604167",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 16.5,
+    "sell": 24.75,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Calcium Carbonate 500mg, Calcitriol 0.25mcg and Zinc 7.5mg",
+    "batch": "0430326D",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 12.37,
+    "sell": 18.56,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Cholecalciferol Granules 60000 IU per gm 1S'",
+    "batch": "UGS26058",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.19,
+    "sell": 9.28,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Vitamin E Softgel Capsules 400 mg",
+    "batch": "113VR2534",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 13.75,
+    "sell": 20.63,
+    "expiry": "2027-11-30"
+  },
+  {
+    "name": "Pregabalin 75mg and Methylcobalamin 750mcg Tablets",
+    "batch": "PRT2603-117",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 23.75,
+    "sell": 35.63,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Pregabalin Tablets 75 mg",
+    "batch": "BNZ01AJB",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 15.13,
+    "sell": 22.69,
+    "expiry": "2028-12-31"
+  },
+  {
+    "name": "Ketoconazole Shampoo 2% W/V",
+    "batch": "PK041",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 38.75,
+    "sell": 58.13,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Etophylline 115mg and Theophylline 35mg",
+    "batch": "TE-230081",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 5.0,
+    "sell": 7.5,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "Etophylline 231mg and Theophylline 69mg",
+    "batch": "A260465A",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 8.94,
+    "sell": 13.41,
+    "expiry": "2029-03-31"
+  },
+  {
+    "name": "Clobetasol Propionate 0.05%w/w, Neomycin 0.50%w/w,",
+    "batch": "6100",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 17.87,
+    "sell": 26.81,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "ACECLOFENAC 100MG, PARACETAMOL 325MG AND CHLORZOXAZONE 250MG",
+    "batch": "GT50830",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 10.0,
+    "sell": 15.0,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Terbutaline Suphate 1.25mg, Bromhexine 4mg, Guaiphenesin 50m",
+    "batch": "B6C0179",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 15.13,
+    "sell": 22.69,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Diclofenac Dithylamine 1.16%w/w, Linseed Oil 3%w/w,",
+    "batch": "DCL26006",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 34.37,
+    "sell": 51.56,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Pepsin 7.5mg and Fungal Diastase Enyme 12.5mg Syrup",
+    "batch": "MLS25874",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 30.0,
+    "sell": 45.0,
+    "expiry": "2027-11-30"
+  },
+  {
+    "name": "Glucosamine 750mg , Diacerein 50mg and Methylsulfonylmethane",
+    "batch": "MT261213",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 30.94,
+    "sell": 46.41,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Mometasone Furoate Cream IP 0.1%w/w",
+    "batch": "2604022",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 11.25,
+    "sell": 16.88,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Pantoprazole Sodium 40mg (Enteric Coated) and",
+    "batch": "GC260307",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 31.25,
+    "sell": 46.88,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Lactulose 10gm per 15ml",
+    "batch": "L-26006",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 80.0,
+    "sell": 120.0,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Glibenclamide 5mg and Metformin Hydrochloride 500mg Tablets",
+    "batch": "MGS-25040",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 7.5,
+    "sell": 11.25,
+    "expiry": "2027-04-30"
+  },
+  {
+    "name": "Escitalopram Oxelate 10mg and Clonazepam 0.5mg Tablets IP",
+    "batch": "TEC-036",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 9.37,
+    "sell": 14.06,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Metformin Hydrochloride 1000mg (Prolonged Release) and",
+    "batch": "MT261294",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 22.68,
+    "sell": 34.03,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Amitriptyline Hydrochloride Tablets IP 25mg",
+    "batch": "MT260996",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 5.5,
+    "sell": 8.25,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Amitriptyline Hydrochloride Tablets IP 10mg",
+    "batch": "APHT-1028",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.13,
+    "sell": 6.19,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Aspirin Enteric Coated Tablets IP 75mg",
+    "batch": "TAGR-042",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 1.87,
+    "sell": 2.81,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Atenolol Tablets IP 25mg",
+    "batch": "CT25262512A",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 3.75,
+    "sell": 5.63,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Aspirin 75mg (Enteric coated) and Atorvastatin 10mg Capsules",
+    "batch": "AAC6001",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 10.0,
+    "sell": 15.0,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Biphasic Isophane Insulin Injection IP 100 IU/ml (30:70 ) (3 3 ml+ eris",
+    "batch": "C25ITH4025",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 110.0,
+    "sell": 165.0,
+    "expiry": "2028-07-31"
+  },
+  {
+    "name": "Calcium Carbonate 1250mg, Vitamin D3 250IU,",
+    "batch": "BNZ24AFB",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 8.94,
+    "sell": 13.41,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Carvedilol Tablets IP 6.25mg",
+    "batch": "CT25262652",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.81,
+    "sell": 7.22,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Chlorthalidone Tablets IP 12.5mg",
+    "batch": "CR2TG016",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 8.94,
+    "sell": 13.41,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Cilnidipine Tablets IP 20mg",
+    "batch": "26S2GTB188",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 12.37,
+    "sell": 18.56,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Cilostazol Tablets IP 50mg",
+    "batch": "CT25262508",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 41.25,
+    "sell": 61.88,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Febuxostat Tablets 40mg",
+    "batch": "BRE05135A",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 12.5,
+    "sell": 18.75,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Frusemide 20mg and Spironolactone 50mg Tablets",
+    "batch": "1452-23",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 17.5,
+    "sell": 26.25,
+    "expiry": "2027-11-30"
+  },
+  {
+    "name": "Glyceryl Trinitrate Controlled Release Tablets 2.6mg (Nitrog",
+    "batch": "GLC26005G",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 31.26,
+    "sell": 46.88,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Hydrochlorothiazide Tablets IP 12.5mg",
+    "batch": "HTT1330",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 3.75,
+    "sell": 5.63,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Isosorbidemononitrate Tablets IP 20mg",
+    "batch": "ISMT-1009",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 5.0,
+    "sell": 7.5,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Ketoconazole Cream 2% w/w",
+    "batch": "6P37",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 12.37,
+    "sell": 18.56,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Lorazepam Tablets IP 1mg",
+    "batch": "4759",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.87,
+    "sell": 10.31,
+    "expiry": "2030-03-31"
+  },
+  {
+    "name": "Lorazepam Tablets IP 2mg",
+    "batch": "4660",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 7.5,
+    "sell": 11.25,
+    "expiry": "2030-02-28"
+  },
+  {
+    "name": "Nebivolol Tablets IP 2.5mg 10's Pure &",
+    "batch": "AUE02BOB",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 10.0,
+    "sell": 15.0,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Nitrofurantoin Tablets I.P 100mg",
+    "batch": "T-2512126",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 11.0,
+    "sell": 16.5,
+    "expiry": "2027-11-30"
+  },
+  {
+    "name": "Olanzapine Tablets IP 5mg",
+    "batch": "4698",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.12,
+    "sell": 6.19,
+    "expiry": "2029-03-31"
+  },
+  {
+    "name": "Olmesartan Medoxomil Tablets IP 20mg",
+    "batch": "26S2GTA973",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 10.62,
+    "sell": 15.94,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Rosuvastatin Tablets IP 5mg",
+    "batch": "BP6090",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 8.25,
+    "sell": 12.38,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Tamsulosin Hydrochloride Prolonged Release Capsules IP 0.4mg",
+    "batch": "CTPR-039",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 13.75,
+    "sell": 20.63,
+    "expiry": "2027-11-30"
+  },
+  {
+    "name": "Telmisartan 40mg and Metoprolol 25mg Tablets",
+    "batch": "UGT26487",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 18.75,
+    "sell": 28.13,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Trihexyphenidyl Hydrochloride Tablets IP 2mg (Benzhexol",
+    "batch": "4678",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.12,
+    "sell": 6.19,
+    "expiry": "2030-02-28"
+  },
+  {
+    "name": "Trimetazidine Hydrochloride Modified Release Tablets 35 mg",
+    "batch": "MT261729",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 13.75,
+    "sell": 20.63,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Metformin Hydrochloride 500mg and Voglibose 0.3mg Tablets",
+    "batch": "VM1TG013",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 10.31,
+    "sell": 15.47,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Zolpidem Tablets IP 10mg",
+    "batch": "ZO1TG006",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 11.25,
+    "sell": 16.88,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Metoprolol Succinate 50mg (Extended Release) and",
+    "batch": "MJG14",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 19.94,
+    "sell": 29.91,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Clobazam Tablet IP 5mg",
+    "batch": "CB1TG003",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 9.37,
+    "sell": 14.06,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Gabapentin 400mg and Nortriptyline 10mg Tablets",
+    "batch": "MT261207",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 34.37,
+    "sell": 51.56,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Cinnarizine Tablets IP 25mg",
+    "batch": "PRT-260519",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.81,
+    "sell": 7.22,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Teneligliptin 20mg and Metformin Hydrochloride 500mg (Sustai",
+    "batch": "MT261257",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 18.75,
+    "sell": 28.13,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "TENELIGLIPTIN 20MG AND METFORMIN HYDROCHLORIDE 1000MG (SUSTA",
+    "batch": "MT261269",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 25.0,
+    "sell": 37.5,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Thyroxine Sodium Tablets IP 50mcg",
+    "batch": "Z25-1275",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 34.37,
+    "sell": 51.56,
+    "expiry": "2027-10-31"
+  },
+  {
+    "name": "Iron 50mg, Folic Acid 0.5mg and Zinc 61.8mg Capsules",
+    "batch": "CJA-26233",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 13.75,
+    "sell": 20.63,
+    "expiry": "2028-05-31"
+  },
+  {
+    "name": "Albendazole Tablets IP 400mg",
+    "batch": "Z26-348",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 2.06,
+    "sell": 3.09,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Gliclazide 80mg and Metformin Hydrochloride 500mg Tablets",
+    "batch": "TGM603",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 17.87,
+    "sell": 26.81,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Diphenhydramine 13-15mg, Ammonium Chloride 135-150mg , Sodiu 100ML",
+    "batch": "DMMS-1163",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 11.25,
+    "sell": 16.88,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Cilnidipine 10mg and Telmisartan 40mg Tablets",
+    "batch": "PRT2602-32",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 15.13,
+    "sell": 22.69,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "Escitalopram Oxalate 5mg and Clonazepam 0.5mg Tablets IP",
+    "batch": "MT261204",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 8.94,
+    "sell": 13.41,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Gabapentin Tablets IP 100 mg",
+    "batch": "PT50086A",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 9.63,
+    "sell": 14.44,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Olmesartan Medoxomil 20mg and Hydrochlorothiazide 12.5mg",
+    "batch": "PRT2602-56",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 16.87,
+    "sell": 25.31,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "Pregabalin 75mg and Nortriptyline 10mg Tablets",
+    "batch": "26S2GTB235",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 21.31,
+    "sell": 31.97,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Quetiapine Tablets IP 25 mg",
+    "batch": "4669",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.87,
+    "sell": 10.31,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Rosuvastatin 10mg and Aspirin 75mg Capsules 10's Pure &",
+    "batch": "AUE05ANB",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 23.13,
+    "sell": 34.69,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Rosuvastatin 10mg and Clopidogrel 75mg Capsules",
+    "batch": "WRV26006G",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 26.25,
+    "sell": 39.38,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "Telmisartan 40mg, Amlodipine 5mg and Hydrochlorothiazide",
+    "batch": "ST26-0894",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 13.06,
+    "sell": 19.59,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "METFORMIN HYDROCHLORIDE 500MG(SR)& GLIMEPIRIDE 2MG",
+    "batch": "GBMT-1128",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 19.94,
+    "sell": 29.91,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Protein Powder 250g",
+    "batch": "ZJAC010326",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 118.65,
+    "sell": 177.97,
+    "expiry": "2027-08-31"
+  },
+  {
+    "name": "Nirmal (Nicotine Polacrilex Chewing Gum 2 mg) 1x9's",
+    "batch": "B100579484",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 24.92,
+    "sell": 42.0,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Jan Pudina Soft Gel Capsules",
+    "batch": "G02026",
+    "supplier": "G.P.SALES",
+    "qty": 20,
+    "minstock": 10,
+    "purchase": 10.0,
+    "sell": 15.0,
+    "expiry": "2029-02-28"
+  },
+  {
+    "name": "L-Arginine Granules 3g",
+    "batch": "UGS26049",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 10.0,
+    "sell": 15.0,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Itraconazole Capsules 200 mg",
+    "batch": "PC50009A",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 22.0,
+    "sell": 33.0,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Luliconazole Cream 1% w/w 10GMS",
+    "batch": "PO40010",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 15.12,
+    "sell": 22.69,
+    "expiry": "2026-12-31"
+  },
+  {
+    "name": "Vildagliptin Tablets 50mg",
+    "batch": "MT261097",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 12.5,
+    "sell": 18.75,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "Vildagliptin 50mg and Metformin 500mg Tablets",
+    "batch": "26L3GTA093",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 18.75,
+    "sell": 28.13,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "Vildagliptin 50mg and Metformin 1000mg Tablets",
+    "batch": "25L3GTA013",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 21.87,
+    "sell": 32.81,
+    "expiry": "2026-12-31"
+  },
+  {
+    "name": "Protein Powder (Vanilla) 250 gm 250G",
+    "batch": "ZJAV010326",
+    "supplier": "G.P.SALES",
+    "qty": 3,
+    "minstock": 10,
+    "purchase": 118.65,
+    "sell": 177.97,
+    "expiry": "2027-08-31"
+  },
+  {
+    "name": "Protein Powder (Kesar Pista)",
+    "batch": "ZJAK010326",
+    "supplier": "G.P.SALES",
+    "qty": 3,
+    "minstock": 10,
+    "purchase": 118.65,
+    "sell": 177.97,
+    "expiry": "2027-08-31"
+  },
+  {
+    "name": "Janaushadhi Poshan with Cocoa 500gm",
+    "batch": "KPC602",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 109.75,
+    "sell": 164.62,
+    "expiry": "2027-08-31"
+  },
+  {
+    "name": "METFORMIN 500MG (PROLONGED RELEASE) AND GLIMEPIRIDE 0.5MG",
+    "batch": "MT261050",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 11.0,
+    "sell": 16.5,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "METFORMIN 1000MG (PROLONGED RELEASE) AND GLIMEPIRIDE 1MG",
+    "batch": "MT244507",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 17.87,
+    "sell": 26.81,
+    "expiry": "2026-11-30"
+  },
+  {
+    "name": "ATORVASTATIN 20MG AND CLOPIDOGREL 75MG CAPSULES 10's Pure &",
+    "batch": "AUE08AYB",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 24.06,
+    "sell": 36.09,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "ATORVASTATIN 20MG, CLOPIDOGREL 75MG AND ASPIRIN 75MG CAPSULE",
+    "batch": "WAD26003G",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 27.5,
+    "sell": 41.25,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "CALCIUM 1250MG, CALCITRIOL 0.25MCG AND VITAMIN K2-7 45MCG",
+    "batch": "0230326D",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 31.25,
+    "sell": 46.88,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "CARBOXYMETHLYCELLULOSE EYE DROPS IP 1% W/V",
+    "batch": "PLM2606",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 18.75,
+    "sell": 28.13,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "CHOLECALCIFEROL CHEWABLE TABLETS",
+    "batch": "298526001",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 10.31,
+    "sell": 15.47,
+    "expiry": "2027-12-31"
+  },
+  {
+    "name": "CILNIDIPINE TABLETS IP",
+    "batch": "MT261003",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 10.31,
+    "sell": 15.47,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "DAPAGLIFLOZIN TABLETS",
+    "batch": "BP6059",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 20.0,
+    "sell": 30.0,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "FERROUS ASCORBATE 100MG, FOLIC ACID 1.5MG AND",
+    "batch": "FAZT-1074",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 20.63,
+    "sell": 30.94,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "GABAPENTIN 100 MG AND NORTRYPTYLINE 10 MG TABLET",
+    "batch": "PRT2603-27",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 15.62,
+    "sell": 23.44,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "GABAPENTIN 300MG AND METHYLCOBALAMIN 500MCG TABLET",
+    "batch": "GPMT-1012",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 25.0,
+    "sell": 37.5,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "GUAIFENESIN 50MG, TERBUTALINE 1.25 MG AND BROMHEXINE 2 MG EX 100ML",
+    "batch": "ML260180",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 15.62,
+    "sell": 23.44,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "IVABRADINE TABLETS 5MG",
+    "batch": "MT261063",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 56.25,
+    "sell": 84.38,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "LEVETIRACETAM TABLETS IP",
+    "batch": "PRT2602-54",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 18.75,
+    "sell": 28.13,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "LEVOCETIRIZINE DIHYDROCHLORIDE TABLETS IP 10MG",
+    "batch": "BNZ07AAB",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 8.75,
+    "sell": 13.13,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "LINAGLIPTIN TABLETS 5MG",
+    "batch": "MT261117",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 23.75,
+    "sell": 35.63,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "METOPROLOL SUCCINATE PROLONGED RELEASE TABLETS IP 25MG",
+    "batch": "PT50075A",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 10.31,
+    "sell": 15.47,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "NICORANDIL TABLET IP 10MG",
+    "batch": "NRDT-1011",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 31.25,
+    "sell": 46.88,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "NICORANDIL TABLET IP 5MG",
+    "batch": "STG-260552",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 25.0,
+    "sell": 37.5,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "PHENYLEPHRINE 5 MG,CHLORPHENIRAMINE 2 MG AND DEXTROMETHORPHA",
+    "batch": "ML260357",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 15.63,
+    "sell": 23.44,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "PREGABALIN 75 MG AND METHYLCOBALAMIN",
+    "batch": "PRT2602-105",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 28.13,
+    "sell": 42.19,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "ROSUVASTATIN TABLETS IP 40MG",
+    "batch": "MT260986",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 27.5,
+    "sell": 41.25,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "ROSUVASTATIN 10MG, ASPIRIN 75MG AND CLOPIDOGREL 75MG CAPSULE",
+    "batch": "RCAC-1019",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 30.94,
+    "sell": 46.41,
+    "expiry": "2027-12-31"
+  },
+  {
+    "name": "ROSUVASTATIN 20MG, ASPIRIN 75MG AND CLOPIDOGREL 75MG CAPSULE",
+    "batch": "MC260187",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 34.37,
+    "sell": 51.56,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "SITAGLIPTIN PHOSPHATE & METFORMIN HYDROCHLORIDE TABLETS (50",
+    "batch": "2510255",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 37.5,
+    "sell": 56.25,
+    "expiry": "2027-09-30"
+  },
+  {
+    "name": "SITAGLIPTIN PHOSPHATE TABLETS IP (50MG)",
+    "batch": "ST260502",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 26.87,
+    "sell": 40.31,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "TELMISARTAN TABLETS IP 80MG",
+    "batch": "PT50048A",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 15.13,
+    "sell": 22.69,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "TICAGRELOR TABLETS 90MG",
+    "batch": "26S2GTA619",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 81.25,
+    "sell": 121.88,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "TORSEMIDE 10MG AND SPIRONOLACTONE 50MG TABLETS",
+    "batch": "MT261279",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 20.0,
+    "sell": 30.0,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "VITAMIN D3 ORAL SOLUTION",
+    "batch": "CIL07AAB",
+    "supplier": "G.P.SALES",
+    "qty": 4,
+    "minstock": 10,
+    "purchase": 15.63,
+    "sell": 23.44,
+    "expiry": "2027-08-31"
+  },
+  {
+    "name": "VOGLIBOSE 0.2MG, GLIMEPIRIDE 1MG AND",
+    "batch": "TV-810033",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 18.75,
+    "sell": 28.13,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Vitamin-C Chewable Tablets 500mg",
+    "batch": "TFY26011AL",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 9.37,
+    "sell": 14.06,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "SILODOSIN CAPSULES",
+    "batch": "CC25260306",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 46.87,
+    "sell": 70.31,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "SILODOSIN 8MG AND DUTASTERIDE 0.5MG CAPSULES",
+    "batch": "MC260124",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 87.5,
+    "sell": 131.25,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "METHYLCOBALAMIN TABLET 1500MCG",
+    "batch": "PRT2603-20",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 15.63,
+    "sell": 23.44,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "METHYLCOBALAMIN TABLET 500MCG",
+    "batch": "PRT2602-04",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 9.37,
+    "sell": 14.06,
+    "expiry": "2028-01-31"
+  },
+  {
+    "name": "PANTOPRAZOLE GASTRO-RESISTANCE TABLETS IP 20MG",
+    "batch": "BPPN26002",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 4.38,
+    "sell": 6.56,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "CHOLECALCIFEROL SOFT GELATIN CAPSULE",
+    "batch": "VHD2603067",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 12.5,
+    "sell": 18.75,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "AMLODIPINE TABLET IP 10MG",
+    "batch": "BPMT26003",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 6.25,
+    "sell": 9.38,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "METFORMIN HYDROCHLORIDE (EAXTENDED REALSE) 500MG AND",
+    "batch": "MT261201",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 31.87,
+    "sell": 47.81,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "DAPAGLIFLOZIN TABLETS 5MG",
+    "batch": "T-2603189",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 15.62,
+    "sell": 23.44,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "BILASTINE 20MG MONTELUKAST 10MG TABLETS",
+    "batch": "MT261761",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 31.25,
+    "sell": 46.88,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "GUAIFENESIN 100MG, TERBUTALINE 1.25 MG AND AMBROXOL 15MG",
+    "batch": "L-2603012",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 18.75,
+    "sell": 28.13,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "ALPHA KETOANALOUGE AND ESSENTIAL AMINO ACID TABLETS",
+    "batch": "T-2601156",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 53.33,
+    "sell": 80.0,
+    "expiry": "2027-12-31"
+  },
+  {
+    "name": "DAPAGLIFLOZIN 10MG AND SITAGLIPTIN 100MG TABLETS",
+    "batch": "GT260672",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 43.75,
+    "sell": 65.63,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "SITAGLIPTIN 50MG AND METFORMIN 500MG EXTENDED RELEASE TABLET",
+    "batch": "GT261035",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 34.37,
+    "sell": 51.56,
+    "expiry": "2028-04-30"
+  },
+  {
+    "name": "DAPAGLIFLOZIN 10MG+ VILDAGLIPTIN 100MG TABLETS",
+    "batch": "MT261019",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 37.5,
+    "sell": 56.25,
+    "expiry": "2028-02-29"
+  },
+  {
+    "name": "LULICONAZOLE CREAM IP 1% W/W 30GM 30gm",
+    "batch": "6P30",
+    "supplier": "G.P.SALES",
+    "qty": 5,
+    "minstock": 10,
+    "purchase": 31.25,
+    "sell": 46.88,
+    "expiry": "2028-03-31"
+  },
+  {
+    "name": "Adhesive Bandages Washproof 19 mmx72 mm or 19mm X 70 mm cont",
+    "batch": "BWP-K25357",
+    "supplier": "G.P.SALES",
+    "qty": 100,
+    "minstock": 10,
+    "purchase": 0.63,
+    "sell": 0.94,
+    "expiry": "2028-10-31"
+  },
+  {
+    "name": "Syringe 2 ml with needle 24G",
+    "batch": "B26116",
+    "supplier": "G.P.SALES",
+    "qty": 100,
+    "minstock": 10,
+    "purchase": 1.56,
+    "sell": 2.34,
+    "expiry": "2029-01-31"
+  },
+  {
+    "name": "GLUCOMETER TEST STRIP 25 Strips",
+    "batch": "GSO4260144",
+    "supplier": "G.P.SALES",
+    "qty": 10,
+    "minstock": 10,
+    "purchase": 140.63,
+    "sell": 210.94,
+    "expiry": "2027-12-31"
+  },
+  {
+    "name": "Oxo-Biodegradable Sanitary Napkins Extra Large (XL) Size wit",
+    "batch": "MDPMXL01",
+    "supplier": "G.P.SALES",
+    "qty": 200,
+    "minstock": 10,
+    "purchase": 10.5,
+    "sell": 15.0,
+    "expiry": "2029-02-28"
+  }
+]

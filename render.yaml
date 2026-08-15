@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: medstock
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        value: "587"
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: REPORT_FROM_EMAIL
+        sync: false
+      - key: REPORT_TO_EMAIL
+        sync: false
+      - key: REPORT_HOUR
+        value: "8"
+      - key: TZ
+        value: "Asia/Kolkata"
