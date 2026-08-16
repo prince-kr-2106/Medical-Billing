@@ -61,35 +61,46 @@ app.delete('/api/inventory/:id', async (req, res) => {
   } catch (err) { res.status(500).json({ error: err.message }); }
 });
 
-// Bulk import — used by the invoice-import screen (PDF-parsed or pre-parsed JSON rows)
+// Bulk import — used by the invoice-import screen (PDF-parsed or pre-parsed JSON rows).
+// Runs upserts in parallel (bounded by the connection pool) instead of one-at-a-time,
+// since looping serially through 200+ rows against a remote database can take minutes.
 app.post('/api/inventory/import', async (req, res) => {
-  const rows = req.body.items;
-  if (!Array.isArray(rows)) return res.status(400).json({ error: 'items must be an array' });
-  let added = 0, updated = 0;
+  const rows = (req.body.items || []).filter(r => r.name && r.expiry);
+  if (!rows.length) return res.status(400).json({ error: 'No valid rows (each needs at least name and expiry).' });
+
   try {
-    for (const row of rows) {
-      if (!row.name || !row.expiry) continue;
-      const { rows: existing } = await pool.query(
-        'SELECT * FROM items WHERE lower(name)=lower($1) AND batch=$2', [row.name, row.batch || '']
+    // Figure out added vs updated counts up front (cheap: one query, compared in memory)
+    const { rows: existingRows } = await pool.query('SELECT lower(name) AS n, batch FROM items');
+    const existingSet = new Set(existingRows.map(r => r.n + '|' + (r.batch || '')));
+    let added = 0, updated = 0;
+    rows.forEach(r => {
+      const key = r.name.toLowerCase() + '|' + (r.batch || '');
+      if (existingSet.has(key)) updated++; else added++;
+    });
+
+    // Run all upserts concurrently — the pg pool queues beyond its connection limit,
+    // so this is safe and still far faster than one query at a time.
+    await Promise.all(rows.map(row => {
+      const id = newId('m');
+      return pool.query(
+        `INSERT INTO items (id, name, batch, supplier, qty, minstock, purchase, sell, expiry)
+         VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)
+         ON CONFLICT (lower(name), batch) DO UPDATE SET
+           qty = items.qty + EXCLUDED.qty,
+           purchase = EXCLUDED.purchase,
+           sell = EXCLUDED.sell,
+           expiry = EXCLUDED.expiry,
+           supplier = COALESCE(NULLIF(EXCLUDED.supplier, ''), items.supplier),
+           updated_at = now()`,
+        [id, row.name, row.batch || '', row.supplier || '', Math.trunc(Number(row.qty)) || 0,
+         Math.trunc(Number(row.minstock)) || 10, Number(row.purchase) || 0, Number(row.sell) || 0, row.expiry]
       );
-      if (existing.length) {
-        const it = existing[0];
-        await pool.query(
-          `UPDATE items SET qty=qty+$1, purchase=$2, sell=$3, expiry=$4, supplier=COALESCE(NULLIF($5,''), supplier), updated_at=now() WHERE id=$6`,
-          [row.qty || 0, row.purchase || it.purchase, row.sell || it.sell, row.expiry || it.expiry, row.supplier || '', it.id]
-        );
-        updated++;
-      } else {
-        await pool.query(
-          `INSERT INTO items (id, name, batch, supplier, qty, minstock, purchase, sell, expiry)
-           VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)`,
-          [newId('m'), row.name, row.batch || '', row.supplier || '', row.qty || 0, row.minstock || 10, row.purchase || 0, row.sell || 0, row.expiry]
-        );
-        added++;
-      }
-    }
+    }));
+
     res.json({ added, updated });
-  } catch (err) { res.status(500).json({ error: err.message }); }
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
 });
 
 /* ---------------- BILLING ---------------- */

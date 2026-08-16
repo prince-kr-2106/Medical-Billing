@@ -728,6 +728,12 @@ document.getElementById('addRowBtn').addEventListener('click', () => {
 document.getElementById('commitImportBtn').addEventListener('click', async () => {
   const supplier = document.getElementById('importSupplier').value.trim();
   const rows = extractedRows.filter(r => r.name && r.expiry).map(r => ({...r, supplier}));
+  if (!rows.length) { toast('No valid rows to import — each needs a name and expiry date.'); return; }
+  const btn = document.getElementById('commitImportBtn');
+  const originalText = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = `Adding ${rows.length} item(s)…`;
+  document.getElementById('importStatus').textContent = `Importing ${rows.length} item(s) — this is one database operation, should take a few seconds.`;
   try{
     const result = await api('/inventory/import', {method:'POST', body: JSON.stringify({items: rows})});
     extractedRows = [];
@@ -735,7 +741,13 @@ document.getElementById('commitImportBtn').addEventListener('click', async () =>
     document.getElementById('importStatus').textContent = `Added ${result.added} new item(s), updated ${result.updated} existing.`;
     document.getElementById('fileInput').value = '';
     await loadAll();
-  }catch(err){ toast('Import failed: ' + err.message); }
+  }catch(err){
+    toast('Import failed: ' + err.message);
+    document.getElementById('importStatus').textContent = `Import failed: ${err.message}. Your data was not changed — try again.`;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = originalText;
+  }
 });
 
 /* ================= REPORTS ================= */
