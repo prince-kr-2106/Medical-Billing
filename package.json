@@ -2,8 +2,10 @@
   "name": "medstock-server",
   "version": "1.0.0",
   "private": true,
-  "description": "MedStock — pharmacy inventory, billing and daily-report backend",
-  "engines": { "node": ">=18" },
+  "description": "MedStock \u2014 pharmacy inventory, billing and daily-report backend",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "start": "node server.js"
   },
@@ -12,7 +14,6 @@
     "cors": "^2.8.5",
     "pg": "^8.11.5",
     "dotenv": "^16.4.5",
-    "nodemailer": "^6.9.13",
     "node-cron": "^3.0.3"
   }
 }
