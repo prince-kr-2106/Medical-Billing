@@ -1,22 +1,103 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const cookieParser = require('cookie-parser');
 const path = require('path');
 const { pool, initDb } = require('./src/db');
 const { buildDailyReport } = require('./src/reportUtil');
 const { sendReportEmail } = require('./src/mailer');
 const { startCronJobs } = require('./src/cronJobs');
+const { hashPassword, verifyPassword, createSession, getUserFromToken, deleteSession, requireAuth } = require('./src/auth');
 
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: '5mb' }));
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+const COOKIE_OPTS = { httpOnly: true, secure: true, sameSite: 'lax', maxAge: 30 * 24 * 60 * 60 * 1000 };
 
 function newId(prefix) {
   return prefix + '_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
 }
 
 app.get('/api/health', (req, res) => res.json({ ok: true }));
+
+/* ---------------- AUTH ---------------- */
+
+// Whether an account has already been created — the signup form only shows if false
+app.get('/api/auth/status', async (req, res) => {
+  try {
+    const { rows } = await pool.query('SELECT id FROM users LIMIT 1');
+    res.json({ hasAccount: rows.length > 0 });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// One-time account creation — refuses once an account already exists, so the
+// public URL can't be used by a stranger to create their own login.
+app.post('/api/auth/signup', async (req, res) => {
+  try {
+    const { rows: existing } = await pool.query('SELECT id FROM users LIMIT 1');
+    if (existing.length) return res.status(403).json({ error: 'An account already exists. Please log in instead.' });
+
+    const email = (req.body.email || '').trim().toLowerCase();
+    const password = req.body.password || '';
+    if (!email || !email.includes('@')) return res.status(400).json({ error: 'Enter a valid email address.' });
+    if (password.length < 6) return res.status(400).json({ error: 'Password must be at least 6 characters.' });
+
+    const hash = await hashPassword(password);
+    const id = newId('u');
+    await pool.query('INSERT INTO users (id, email, password_hash) VALUES ($1, $2, $3)', [id, email, hash]);
+    const { token } = await createSession(id);
+    res.cookie('session', token, COOKIE_OPTS);
+    res.json({ email });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+app.post('/api/auth/login', async (req, res) => {
+  try {
+    const email = (req.body.email || '').trim().toLowerCase();
+    const password = req.body.password || '';
+    const { rows } = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
+    if (!rows.length) return res.status(401).json({ error: 'Incorrect email or password.' });
+    const ok = await verifyPassword(password, rows[0].password_hash);
+    if (!ok) return res.status(401).json({ error: 'Incorrect email or password.' });
+    const { token } = await createSession(rows[0].id);
+    res.cookie('session', token, COOKIE_OPTS);
+    res.json({ email: rows[0].email });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+app.post('/api/auth/logout', async (req, res) => {
+  try {
+    await deleteSession(req.cookies.session);
+    res.clearCookie('session');
+    res.json({ ok: true });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+app.get('/api/auth/me', async (req, res) => {
+  const user = await getUserFromToken(req.cookies.session);
+  if (!user) return res.status(401).json({ error: 'Not logged in.' });
+  res.json({ email: user.email });
+});
+
+app.post('/api/auth/change-password', requireAuth, async (req, res) => {
+  try {
+    const currentPassword = req.body.currentPassword || '';
+    const newPassword = req.body.newPassword || '';
+    if (newPassword.length < 6) return res.status(400).json({ error: 'New password must be at least 6 characters.' });
+    const { rows } = await pool.query('SELECT * FROM users WHERE id = $1', [req.user.id]);
+    const ok = await verifyPassword(currentPassword, rows[0].password_hash);
+    if (!ok) return res.status(401).json({ error: 'Current password is incorrect.' });
+    const hash = await hashPassword(newPassword);
+    await pool.query('UPDATE users SET password_hash = $1 WHERE id = $2', [hash, req.user.id]);
+    res.json({ ok: true });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+// Everything below this line requires a logged-in session.
+app.use(['/api/inventory', '/api/bills', '/api/reports'], requireAuth);
 
 /* ---------------- INVENTORY ---------------- */
 

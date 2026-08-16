@@ -138,9 +138,53 @@
     .item-row{grid-template-columns:1fr; gap:8px; padding:16px 18px;}
     .cart-row, .review-row{grid-template-columns:1fr 1fr; row-gap:6px;}
   }
+
+  /* Auth screen */
+  #authScreen{
+    position:fixed; inset:0; background:var(--bg); display:flex; align-items:center; justify-content:center;
+    z-index:200; padding:20px;
+  }
+  #authScreen.hidden{display:none;}
+  #appRoot.hidden{display:none;}
+  .auth-card{
+    background:var(--surface); border:1px solid var(--border-soft); border-radius:16px; padding:36px 32px;
+    width:100%; max-width:380px;
+  }
+  .auth-brand{display:flex; align-items:center; gap:12px; margin-bottom:26px;}
+  .auth-brand .brand-mark{width:38px; height:38px; border-radius:10px; background:var(--teal); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+  .auth-title{font-family:'Space Grotesk'; font-size:19px; font-weight:600; margin:0 0 4px;}
+  .auth-sub{font-size:13px; color:var(--ink-soft); margin:0 0 22px;}
+  .auth-error{background:var(--red-bg); color:var(--red); font-size:13px; padding:10px 12px; border-radius:8px; margin-bottom:14px; display:none;}
+  .auth-error.show{display:block;}
+  .auth-submit{width:100%; justify-content:center; margin-top:6px;}
+  .auth-switch{text-align:center; font-size:12.5px; color:var(--ink-soft); margin-top:18px;}
+  .auth-switch a{color:var(--teal-dark); cursor:pointer; text-decoration:underline;}
 </style>
 </head>
 <body>
+
+<div id="authScreen">
+  <div class="auth-card">
+    <div class="auth-brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L4 6V11C4 16 7.5 20.5 12 22C16.5 20.5 20 16 20 11V6L12 2Z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M12 8V15M8.5 11.5H15.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div style="font-family:'Space Grotesk'; font-weight:600; font-size:19px;">MedStock</div>
+    </div>
+    <div class="auth-title" id="authTitle">Sign in</div>
+    <p class="auth-sub" id="authSub">Access your pharmacy's inventory and billing.</p>
+    <div class="auth-error" id="authError"></div>
+    <div class="field"><label>Email</label><input id="authEmail" type="email" placeholder="you@example.com" autocomplete="username"></div>
+    <div class="field"><label>Password</label><input id="authPassword" type="password" placeholder="••••••••" autocomplete="current-password"></div>
+    <button class="btn btn-primary auth-submit" id="authSubmitBtn">Sign in</button>
+    <div class="auth-switch" id="authSwitch"></div>
+  </div>
+</div>
+
+<div id="appRoot" class="hidden">
 <div class="wrap">
   <header>
     <div class="brand">
@@ -152,7 +196,10 @@
       </div>
       <div><h1>MedStock</h1><div class="sub" id="dateLine"></div></div>
     </div>
-    <button class="btn" id="sendReportBtn">Email today's report now</button>
+    <div style="display:flex; gap:10px;">
+      <button class="btn" id="sendReportBtn">Email today's report now</button>
+      <button class="btn" id="signOutBtn">Sign out</button>
+    </div>
   </header>
 
   <div class="banner" id="alertBanner"></div>
@@ -263,6 +310,7 @@
     <div class="card report-box" id="reportBox"><div class="empty"><h3>No report yet</h3><p>Pick a date and generate the daily summary.</p></div></div>
   </div>
 </div>
+</div>
 
 <div class="modal-backdrop" id="modalBackdrop">
   <div class="modal">
@@ -312,6 +360,11 @@ function toast(msg){
 }
 async function api(path, opts){
   const res = await fetch(API + path, {headers:{'Content-Type':'application/json'}, ...opts});
+  if(res.status === 401){
+    document.getElementById('appRoot').classList.add('hidden');
+    document.getElementById('authScreen').classList.remove('hidden');
+    throw new Error('Your session expired — please sign in again.');
+  }
   if(!res.ok){ const e = await res.json().catch(()=>({error:res.statusText})); throw new Error(e.error || 'Request failed'); }
   return res.status === 204 ? null : res.json();
 }
@@ -775,7 +828,115 @@ async function generateReport(){
 /* ---------- init ---------- */
 function renderAll(){ renderInventory(); renderBillHistory(); renderBanner(); }
 setDateLine();
-loadAll();
+
+/* ================= AUTH ================= */
+let authMode = 'login'; // 'login' | 'signup'
+
+const authScreen = document.getElementById('authScreen');
+const appRoot = document.getElementById('appRoot');
+const authEmail = document.getElementById('authEmail');
+const authPassword = document.getElementById('authPassword');
+const authError = document.getElementById('authError');
+const authSubmitBtn = document.getElementById('authSubmitBtn');
+const authTitle = document.getElementById('authTitle');
+const authSub = document.getElementById('authSub');
+const authSwitch = document.getElementById('authSwitch');
+
+function showAuthError(msg){
+  authError.textContent = msg;
+  authError.classList.add('show');
+}
+function clearAuthError(){
+  authError.classList.remove('show');
+  authError.textContent = '';
+}
+
+function renderAuthMode(){
+  clearAuthError();
+  if (authMode === 'signup') {
+    authTitle.textContent = 'Create your account';
+    authSub.textContent = 'This is a one-time setup — only one account can be created for this pharmacy.';
+    authSubmitBtn.textContent = 'Create account';
+    authPassword.setAttribute('autocomplete', 'new-password');
+    authSwitch.innerHTML = 'Already set up? <a id="toLogin">Sign in instead</a>';
+    document.getElementById('toLogin').addEventListener('click', () => { authMode = 'login'; renderAuthMode(); });
+  } else {
+    authTitle.textContent = 'Sign in';
+    authSub.textContent = "Access your pharmacy's inventory and billing.";
+    authSubmitBtn.textContent = 'Sign in';
+    authPassword.setAttribute('autocomplete', 'current-password');
+    authSwitch.innerHTML = '';
+  }
+}
+
+async function authApi(path, body){
+  const res = await fetch('/api/auth' + path, {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify(body)
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || 'Something went wrong.');
+  return data;
+}
+
+authSubmitBtn.addEventListener('click', async () => {
+  clearAuthError();
+  const email = authEmail.value.trim();
+  const password = authPassword.value;
+  if (!email || !password) { showAuthError('Enter both email and password.'); return; }
+  authSubmitBtn.disabled = true;
+  const originalText = authSubmitBtn.textContent;
+  authSubmitBtn.textContent = authMode === 'signup' ? 'Creating account…' : 'Signing in…';
+  try{
+    await authApi(authMode === 'signup' ? '/signup' : '/login', { email, password });
+    enterApp();
+  }catch(err){
+    showAuthError(err.message);
+  }finally{
+    authSubmitBtn.disabled = false;
+    authSubmitBtn.textContent = originalText;
+  }
+});
+
+[authEmail, authPassword].forEach(el => el.addEventListener('keydown', e => {
+  if (e.key === 'Enter') authSubmitBtn.click();
+}));
+
+document.getElementById('signOutBtn').addEventListener('click', async () => {
+  try{ await fetch('/api/auth/logout', {method:'POST'}); }catch(e){}
+  appRoot.classList.add('hidden');
+  authScreen.classList.remove('hidden');
+  authEmail.value = ''; authPassword.value = '';
+  authMode = 'login';
+  renderAuthMode();
+});
+
+function enterApp(){
+  authScreen.classList.add('hidden');
+  appRoot.classList.remove('hidden');
+  loadAll();
+}
+
+async function initAuth(){
+  try{
+    const me = await fetch('/api/auth/me');
+    if (me.ok) { enterApp(); return; }
+  }catch(e){}
+
+  try{
+    const statusRes = await fetch('/api/auth/status');
+    const status = await statusRes.json();
+    authMode = status.hasAccount ? 'login' : 'signup';
+  }catch(e){
+    authMode = 'login';
+  }
+  renderAuthMode();
+  authScreen.classList.remove('hidden');
+  appRoot.classList.add('hidden');
+}
+
+initAuth();
 </script>
 </body>
 </html>
