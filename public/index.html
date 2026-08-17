@@ -88,10 +88,19 @@
   .chip.active{background:var(--ink); border-color:var(--ink); color:#fff;}
 
   .card{background:var(--surface); border:1px solid var(--border-soft); border-radius:12px;}
-  .row-head{display:grid; grid-template-columns:2.1fr 1fr .8fr 1.6fr 1fr .6fr; padding:12px 18px; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-soft); border-bottom:1px solid var(--border-soft); background:var(--gray-bg);}
-  .item-row{display:grid; grid-template-columns:2.1fr 1fr .8fr 1.6fr 1fr .6fr; padding:14px 18px; align-items:center; border-bottom:1px solid var(--border-soft); font-size:14px;}
+  .table-scroll{overflow-x:auto;}
+  .row-head{
+    display:grid; grid-template-columns: .5fr 1.9fr .85fr .65fr .8fr .5fr 1.15fr .7fr .7fr .85fr .5fr;
+    min-width:1180px; padding:12px 18px; font-size:11px; text-transform:uppercase; letter-spacing:.04em;
+    color:var(--ink-soft); border-bottom:1px solid var(--border-soft); background:var(--gray-bg); gap:8px;
+  }
+  .item-row{
+    display:grid; grid-template-columns: .5fr 1.9fr .85fr .65fr .8fr .5fr 1.15fr .7fr .7fr .85fr .5fr;
+    min-width:1180px; padding:14px 18px; align-items:center; border-bottom:1px solid var(--border-soft); font-size:14px; gap:8px;
+  }
   .item-row:last-child{border-bottom:none;}
   .item-row:hover{background:#FBFAF6;}
+  .slno{color:var(--ink-soft); font-family:'IBM Plex Mono',monospace; font-size:13px;}
   .med-name{font-weight:500;}
   .med-meta{font-size:12px; color:var(--ink-soft); margin-top:2px;}
   .mono{font-family:'IBM Plex Mono',monospace; font-size:13px;}
@@ -161,8 +170,7 @@
   @media (max-width: 900px){ .bill-grid{grid-template-columns:1fr;} }
   @media (max-width: 720px){
     .metrics{grid-template-columns:repeat(2,1fr);}
-    .row-head, .review-head{display:none;}
-    .item-row{grid-template-columns:1fr; gap:8px; padding:16px 18px;}
+    .review-head{display:none;}
     .cart-row, .review-row{grid-template-columns:1fr 1fr; row-gap:6px;}
   }
 
@@ -270,8 +278,13 @@
       <button class="btn btn-primary" id="addBtn">+ Add medicine</button>
     </div>
     <div class="card">
-      <div class="row-head"><div>Medicine</div><div>Batch</div><div>Qty</div><div>Shelf life</div><div>Value</div><div></div></div>
-      <div id="listBody"></div>
+      <div class="table-scroll">
+        <div class="row-head">
+          <div>Sl.no</div><div>Medicine</div><div>Batch</div><div>HSN</div><div>Drug code</div><div>Qty</div>
+          <div>Shelf life</div><div>MRP</div><div>Rate</div><div>Amount</div><div></div>
+        </div>
+        <div id="listBody"></div>
+      </div>
       <div class="empty" id="emptyState" style="display:none;"><h3>No medicines yet</h3><p>Add your first item, or import a supplier invoice.</p></div>
     </div>
   </div>
@@ -362,12 +375,16 @@
       <div class="field"><label>Supplier</label><input id="f_supplier" placeholder="Sun Pharma Distributors"></div>
     </div>
     <div class="field-row">
+      <div class="field"><label>HSN code</label><input id="f_hsn" placeholder="300490"></div>
+      <div class="field"><label>Drug code</label><input id="f_drugcode" placeholder="01"></div>
+    </div>
+    <div class="field-row">
       <div class="field"><label>Quantity</label><input id="f_qty" type="number" min="0" placeholder="100"></div>
       <div class="field"><label>Low stock alert below</label><input id="f_minstock" type="number" min="0" placeholder="10"></div>
     </div>
     <div class="field-row">
-      <div class="field"><label>Purchase price / unit (₹)</label><input id="f_purchase" type="number" min="0" step="0.01" placeholder="2.50"></div>
-      <div class="field"><label>Selling price / unit (₹)</label><input id="f_sell" type="number" min="0" step="0.01" placeholder="3.50"></div>
+      <div class="field"><label>Rate / unit (₹)</label><input id="f_purchase" type="number" min="0" step="0.01" placeholder="2.50"></div>
+      <div class="field"><label>MRP / unit (₹)</label><input id="f_sell" type="number" min="0" step="0.01" placeholder="3.50"></div>
     </div>
     <div class="field"><label>Expiry date</label><input id="f_expiry" type="date"></div>
     <div class="modal-actions">
@@ -511,7 +528,7 @@ function filteredItems(){
     if(activeFilter === 'soon' && !(d >= 0 && d <= 30)) return false;
     if(activeFilter === 'low' && !low) return false;
     if(searchTerm){
-      const hay = (it.name+' '+it.batch+' '+it.supplier).toLowerCase();
+      const hay = (it.name+' '+it.batch+' '+it.supplier+' '+(it.hsn||'')+' '+(it.drug_code||'')).toLowerCase();
       if(!hay.includes(searchTerm.toLowerCase())) return false;
     }
     return true;
@@ -526,22 +543,27 @@ function renderInventory(){
   if(items.length === 0){ empty.style.display='block'; body.style.display='none'; return; }
   empty.style.display='none'; body.style.display='block';
   if(list.length === 0){ body.innerHTML = '<div class="empty"><h3>No matches</h3><p>Try a different search or filter.</p></div>'; return; }
-  list.forEach(it => {
+  list.forEach((it, idx) => {
     const d = daysUntil(it.expiry);
     const zone = zoneFor(d);
     const low = Number(it.qty) <= Number(it.minstock);
     const clamped = Math.max(-30, Math.min(365, d));
     const pct = Math.round(((clamped + 30) / 395) * 100);
-    const value = Number(it.qty) * Number(it.purchase);
+    const amount = Number(it.qty) * Number(it.purchase);
     const row = document.createElement('div');
     row.className = 'item-row';
     row.innerHTML = `
+      <div class="slno">${idx + 1}</div>
       <div><div class="med-name">${escapeHtml(it.name)}</div><div class="med-meta">${escapeHtml(it.supplier || 'No supplier listed')}</div></div>
       <div class="mono">${escapeHtml(it.batch || '—')}</div>
+      <div class="mono">${escapeHtml(it.hsn || '—')}</div>
+      <div class="mono">${escapeHtml(it.drug_code || '—')}</div>
       <div class="mono ${low ? 'qty-low' : ''}">${it.qty}${low ? ' ⚠' : ''}</div>
       <div><div><span class="badge ${zone.badge}">${zone.label}</span></div>
         <div class="gauge-track"><div class="gauge-fill" style="width:${pct}%; background:${zone.color};"></div></div></div>
-      <div class="mono">${fmtMoney(value)}</div>
+      <div class="mono">${fmtMoney(it.sell)}</div>
+      <div class="mono">${fmtMoney(it.purchase)}</div>
+      <div class="mono">${fmtMoney(amount)}</div>
       <div class="row-actions">
         <button class="icon-btn" data-edit="${it.id}" title="Edit">✎</button>
         <button class="icon-btn" data-del="${it.id}" title="Delete">✕</button>
@@ -554,11 +576,13 @@ function renderInventory(){
 function openModal(id){
   editingId = id || null;
   document.getElementById('modalTitle').textContent = id ? 'Edit medicine' : 'Add medicine';
-  const ids = ['f_name','f_batch','f_supplier','f_qty','f_minstock','f_purchase','f_sell','f_expiry'];
+  const ids = ['f_name','f_batch','f_hsn','f_drugcode','f_supplier','f_qty','f_minstock','f_purchase','f_sell','f_expiry'];
   if(id){
     const it = items.find(x => x.id === id);
     document.getElementById('f_name').value = it.name || '';
     document.getElementById('f_batch').value = it.batch || '';
+    document.getElementById('f_hsn').value = it.hsn || '';
+    document.getElementById('f_drugcode').value = it.drug_code || '';
     document.getElementById('f_supplier').value = it.supplier || '';
     document.getElementById('f_qty').value = it.qty || '';
     document.getElementById('f_minstock').value = it.minstock || '';
@@ -574,7 +598,9 @@ async function saveItem(){
   const expiry = document.getElementById('f_expiry').value;
   if(!name || !expiry){ toast('Name and expiry date are required.'); return; }
   const data = {
-    name, batch: document.getElementById('f_batch').value.trim(), supplier: document.getElementById('f_supplier').value.trim(),
+    name, batch: document.getElementById('f_batch').value.trim(),
+    hsn: document.getElementById('f_hsn').value.trim(), drugCode: document.getElementById('f_drugcode').value.trim(),
+    supplier: document.getElementById('f_supplier').value.trim(),
     qty: Number(document.getElementById('f_qty').value) || 0, minstock: Number(document.getElementById('f_minstock').value) || 0,
     purchase: Number(document.getElementById('f_purchase').value) || 0, sell: Number(document.getElementById('f_sell').value) || 0, expiry
   };

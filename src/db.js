@@ -16,6 +16,8 @@ async function initDb() {
       id TEXT PRIMARY KEY,
       name TEXT NOT NULL,
       batch TEXT DEFAULT '',
+      hsn TEXT DEFAULT '',
+      drug_code TEXT DEFAULT '',
       supplier TEXT DEFAULT '',
       qty INTEGER NOT NULL DEFAULT 0,
       minstock INTEGER NOT NULL DEFAULT 10,
@@ -26,6 +28,9 @@ async function initDb() {
       updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
     );
   `);
+  // Safe to run repeatedly — adds the columns if this table already existed before this feature
+  await pool.query(`ALTER TABLE items ADD COLUMN IF NOT EXISTS hsn TEXT DEFAULT '';`);
+  await pool.query(`ALTER TABLE items ADD COLUMN IF NOT EXISTS drug_code TEXT DEFAULT '';`);
 
   await pool.query(`
     CREATE TABLE IF NOT EXISTS bills (

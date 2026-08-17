@@ -110,13 +110,13 @@ app.get('/api/inventory', async (req, res) => {
 
 app.post('/api/inventory', async (req, res) => {
   try {
-    const { name, batch, supplier, qty, minstock, purchase, sell, expiry } = req.body;
+    const { name, batch, hsn, drugCode, supplier, qty, minstock, purchase, sell, expiry } = req.body;
     if (!name || !expiry) return res.status(400).json({ error: 'name and expiry are required' });
     const id = newId('m');
     const { rows } = await pool.query(
-      `INSERT INTO items (id, name, batch, supplier, qty, minstock, purchase, sell, expiry)
-       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING *`,
-      [id, name, batch || '', supplier || '', qty || 0, minstock || 10, purchase || 0, sell || 0, expiry]
+      `INSERT INTO items (id, name, batch, hsn, drug_code, supplier, qty, minstock, purchase, sell, expiry)
+       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11) RETURNING *`,
+      [id, name, batch || '', hsn || '', drugCode || '', supplier || '', qty || 0, minstock || 10, purchase || 0, sell || 0, expiry]
     );
     res.status(201).json(rows[0]);
   } catch (err) { res.status(500).json({ error: err.message }); }
@@ -124,11 +124,11 @@ app.post('/api/inventory', async (req, res) => {
 
 app.put('/api/inventory/:id', async (req, res) => {
   try {
-    const { name, batch, supplier, qty, minstock, purchase, sell, expiry } = req.body;
+    const { name, batch, hsn, drugCode, supplier, qty, minstock, purchase, sell, expiry } = req.body;
     const { rows } = await pool.query(
-      `UPDATE items SET name=$1, batch=$2, supplier=$3, qty=$4, minstock=$5, purchase=$6, sell=$7, expiry=$8, updated_at=now()
-       WHERE id=$9 RETURNING *`,
-      [name, batch || '', supplier || '', qty || 0, minstock || 10, purchase || 0, sell || 0, expiry, req.params.id]
+      `UPDATE items SET name=$1, batch=$2, hsn=$3, drug_code=$4, supplier=$5, qty=$6, minstock=$7, purchase=$8, sell=$9, expiry=$10, updated_at=now()
+       WHERE id=$11 RETURNING *`,
+      [name, batch || '', hsn || '', drugCode || '', supplier || '', qty || 0, minstock || 10, purchase || 0, sell || 0, expiry, req.params.id]
     );
     if (!rows.length) return res.status(404).json({ error: 'not found' });
     res.json(rows[0]);
@@ -164,16 +164,18 @@ app.post('/api/inventory/import', async (req, res) => {
     await Promise.all(rows.map(row => {
       const id = newId('m');
       return pool.query(
-        `INSERT INTO items (id, name, batch, supplier, qty, minstock, purchase, sell, expiry)
-         VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)
+        `INSERT INTO items (id, name, batch, hsn, drug_code, supplier, qty, minstock, purchase, sell, expiry)
+         VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
          ON CONFLICT (lower(name), batch) DO UPDATE SET
            qty = items.qty + EXCLUDED.qty,
            purchase = EXCLUDED.purchase,
            sell = EXCLUDED.sell,
            expiry = EXCLUDED.expiry,
+           hsn = COALESCE(NULLIF(EXCLUDED.hsn, ''), items.hsn),
+           drug_code = COALESCE(NULLIF(EXCLUDED.drug_code, ''), items.drug_code),
            supplier = COALESCE(NULLIF(EXCLUDED.supplier, ''), items.supplier),
            updated_at = now()`,
-        [id, row.name, row.batch || '', row.supplier || '', Math.trunc(Number(row.qty)) || 0,
+        [id, row.name, row.batch || '', row.hsn || '', row.drugCode || '', row.supplier || '', Math.trunc(Number(row.qty)) || 0,
          Math.trunc(Number(row.minstock)) || 10, Number(row.purchase) || 0, Number(row.sell) || 0, row.expiry]
       );
     }));
