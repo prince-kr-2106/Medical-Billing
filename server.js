@@ -142,6 +142,15 @@ app.delete('/api/inventory/:id', async (req, res) => {
   } catch (err) { res.status(500).json({ error: err.message }); }
 });
 
+// Wipes the entire inventory in one go — used by the "Clear all inventory" button.
+// Bills/sales history are untouched; only the items table is emptied.
+app.delete('/api/inventory', async (req, res) => {
+  try {
+    const { rowCount } = await pool.query('DELETE FROM items');
+    res.json({ ok: true, deleted: rowCount });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
 // Bulk import — used by the invoice-import screen (PDF-parsed or pre-parsed JSON rows).
 // Runs upserts in parallel (bounded by the connection pool) instead of one-at-a-time,
 // since looping serially through 200+ rows against a remote database can take minutes.

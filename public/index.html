@@ -275,6 +275,7 @@
         <div class="chip" data-f="soon">Expiring soon</div>
         <div class="chip" data-f="low">Low stock</div>
       </div>
+      <button class="btn" id="clearAllBtn" style="color:var(--red); border-color:var(--red-bg);">Clear all</button>
       <button class="btn btn-primary" id="addBtn">+ Add medicine</button>
     </div>
     <div class="card">
@@ -350,7 +351,7 @@
       </div>
       <div style="display:flex; gap:10px; margin-top:14px;">
         <button class="btn" id="addRowBtn">+ Add row manually</button>
-        <button class="btn btn-primary" id="commitImportBtn">Add all to inventory</button>
+        <button class="btn btn-primary" id="commitImportBtn">Save</button>
       </div>
     </div>
   </div>
@@ -615,6 +616,22 @@ async function deleteItem(id){
   try{ await api('/inventory/' + id, {method:'DELETE'}); await loadAll(); }
   catch(err){ toast('Delete failed: ' + err.message); }
 }
+async function clearAllInventory(){
+  if(items.length === 0){ toast('Inventory is already empty.'); return; }
+  const first = confirm(`Delete all ${items.length} medicines from inventory? This cannot be undone.`);
+  if(!first) return;
+  const second = confirm('Are you sure? This permanently deletes every item — type OK to confirm one more time.');
+  if(!second) return;
+  const btn = document.getElementById('clearAllBtn');
+  btn.disabled = true; const original = btn.textContent; btn.textContent = 'Clearing…';
+  try{
+    const result = await api('/inventory', {method:'DELETE'});
+    toast(`Cleared ${result.deleted} item(s) from inventory.`);
+    await loadAll();
+  }catch(err){ toast('Clear failed: ' + err.message); }
+  finally{ btn.disabled = false; btn.textContent = original; }
+}
+document.getElementById('clearAllBtn').addEventListener('click', clearAllInventory);
 document.getElementById('addBtn').addEventListener('click', () => openModal(null));
 document.getElementById('cancelBtn').addEventListener('click', closeModal);
 document.getElementById('saveBtn').addEventListener('click', saveItem);
