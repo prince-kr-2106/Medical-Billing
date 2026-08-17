@@ -2,6 +2,8 @@
   {
     "name": "ACECLOFENAC 100MG AND PARACETAMOL 325MG TABLETS",
     "batch": "PRT-260304",
+    "hsn": "300490",
+    "drugCode": "01",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -12,6 +14,8 @@
   {
     "name": "Pregabalin Tablets 75 mg",
     "batch": "C-2506042",
+    "hsn": "300490",
+    "drugCode": "03",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -22,6 +26,8 @@
   {
     "name": "CHLORZOXAZONE 500MG, DICLOFENAC 50MG AND PARACETAMOL 325MG",
     "batch": "PRT2602-20",
+    "hsn": "300490",
+    "drugCode": "06",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -32,6 +38,8 @@
   {
     "name": "DICLOFENAC GEL IP (DICLOFENAC DIETHYLAMINE 1.16%W/W)",
     "batch": "GS-2616",
+    "hsn": "300490",
+    "drugCode": "07",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -42,6 +50,8 @@
   {
     "name": "DICLOFENAC SODIUM PROLONGED RELEASE TABLETS IP",
     "batch": "IC2TG024",
+    "hsn": "300490",
+    "drugCode": "09",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -52,6 +62,8 @@
   {
     "name": "Diclofenac Gastro-Resistant Tablets IP 50 mg",
     "batch": "DOFT-1004",
+    "hsn": "30049099",
+    "drugCode": "11",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -62,6 +74,8 @@
   {
     "name": "Etoricoxib Tablets IP 90 mg",
     "batch": "310826006",
+    "hsn": "300490",
+    "drugCode": "13",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -72,6 +86,8 @@
   {
     "name": "Ibuprofen 400mg and Paracetamol 325mg Tablets IP",
     "batch": "C25I946007",
+    "hsn": "300490",
+    "drugCode": "14",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -82,6 +98,8 @@
   {
     "name": "Azithromycin Tablets IP 250 mg",
     "batch": "AM260203",
+    "hsn": "300490",
+    "drugCode": "18",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -92,6 +110,8 @@
   {
     "name": "Nimesulide 100mg and Paracetamol 325mg Tablets",
     "batch": "STG26116",
+    "hsn": "300490",
+    "drugCode": "19",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -102,6 +122,8 @@
   {
     "name": "Nimesulide Tablets 100 mg",
     "batch": "NMST-1023",
+    "hsn": "300490",
+    "drugCode": "20",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -112,6 +134,8 @@
   {
     "name": "Diclofenac Sodium 50mg and Paracetamol 325mg Tablets IP",
     "batch": "DSPT-1154",
+    "hsn": "300490",
+    "drugCode": "21",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -122,6 +146,8 @@
   {
     "name": "Paracetamol Tablets IP 500 mg",
     "batch": "TJA-252542",
+    "hsn": "300490",
+    "drugCode": "23",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -132,6 +158,8 @@
   {
     "name": "METFORMIN HYDROCHLORIDE 500MG(SR)& GLIMEPIRIDE 2MG",
     "batch": "GMTT-1078",
+    "hsn": "300490",
+    "drugCode": "34",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -142,6 +170,8 @@
   {
     "name": "AMOXYCILLIN 500MG AND POTASSIUM CLAVULANATE 125MG TABLETS IP",
     "batch": "BT260198",
+    "hsn": "30041090",
+    "drugCode": "39",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -152,6 +182,8 @@
   {
     "name": "Amoxycillin Capsules IP 250mg",
     "batch": "BC250184",
+    "hsn": "300410",
+    "drugCode": "44",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -162,6 +194,8 @@
   {
     "name": "Amoxycillin Capsules IP 500mg",
     "batch": "GC5183",
+    "hsn": "300410",
+    "drugCode": "45",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -172,6 +206,8 @@
   {
     "name": "Cefixime Tablets IP 200 mg",
     "batch": "CFP-169",
+    "hsn": "300490",
+    "drugCode": "55",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -182,6 +218,8 @@
   {
     "name": "Cefpodoxime Tablets IP 200 mg",
     "batch": "6207008",
+    "hsn": "300420",
+    "drugCode": "66",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -192,6 +230,8 @@
   {
     "name": "Azithromycin Tablets IP 500 mg",
     "batch": "AMA260202",
+    "hsn": "300420",
+    "drugCode": "72",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -202,6 +242,8 @@
   {
     "name": "Cefuroxime Axetil Tablets IP 500 mg",
     "batch": "CT260362",
+    "hsn": "300490",
+    "drugCode": "79",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -212,6 +254,8 @@
   {
     "name": "Clotrimazole Cream IP 1% w/w 15g",
     "batch": "6124",
+    "hsn": "300490",
+    "drugCode": "87",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -222,6 +266,8 @@
   {
     "name": "Levofloxacin Tablets IP 500mg",
     "batch": "AX26001H1",
+    "hsn": "300420",
+    "drugCode": "96",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -232,6 +278,8 @@
   {
     "name": "Ofloxacin 200mg and Ornidazole 500mg Tablets IP",
     "batch": "TJA-260668",
+    "hsn": "300420",
+    "drugCode": "100",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -242,6 +290,8 @@
   {
     "name": "Ofloxacin Tablets IP 200mg",
     "batch": "CT25262582",
+    "hsn": "300420",
+    "drugCode": "101",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -252,6 +302,8 @@
   {
     "name": "Beclomethasone Dipropionate 0.025%w/w, Clotrimazole 1%w/w an",
     "batch": "1359CG",
+    "hsn": "300490",
+    "drugCode": "112",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -262,6 +314,8 @@
   {
     "name": "Clobetasol Propionate Cream IP 0.05 % w/w",
     "batch": "6O42",
+    "hsn": "300490",
+    "drugCode": "118",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -272,6 +326,8 @@
   {
     "name": "Povidone Iodine Ointment 5% w/w 15 gm biodea",
     "batch": "2509131",
+    "hsn": "300490",
+    "drugCode": "125",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -282,6 +338,8 @@
   {
     "name": "Gliclazide Tablets IP 40 mg",
     "batch": "MT261032",
+    "hsn": "300490",
+    "drugCode": "135",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -292,6 +350,8 @@
   {
     "name": "Glimepiride Tablets IP 1mg",
     "batch": "PRT2604-01",
+    "hsn": "300490",
+    "drugCode": "137",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -302,6 +362,8 @@
   {
     "name": "Glimepiride Tablets IP 2mg",
     "batch": "PRT2603-37",
+    "hsn": "300490",
+    "drugCode": "138",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -312,6 +374,8 @@
   {
     "name": "Soluble Insulin Injection IP (Regular) (Recombinant DNA orig",
     "batch": "A032615038",
+    "hsn": "300431",
+    "drugCode": "142",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -322,6 +386,8 @@
   {
     "name": "Insulin Injection IP (Insulin Human Soluble 30% and",
     "batch": "V26ITF4022",
+    "hsn": "300431",
+    "drugCode": "143",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -332,6 +398,8 @@
   {
     "name": "Metformin Hydrochloride Sustained Release Tablets IP 1000 mg",
     "batch": "260260",
+    "hsn": "300490",
+    "drugCode": "144",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -342,6 +410,8 @@
   {
     "name": "Bisacodyl Tablets IP 5mg",
     "batch": "QBCJT-002",
+    "hsn": "300490",
+    "drugCode": "180",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -352,6 +422,8 @@
   {
     "name": "Famotidine Tablets IP 40 mg",
     "batch": "FBT1311",
+    "hsn": "300490",
+    "drugCode": "192",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -362,6 +434,8 @@
   {
     "name": "Lactic Acid Bacillus Tablets 60 Million spores",
     "batch": "TLAB-029",
+    "hsn": "300490",
+    "drugCode": "196",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -372,6 +446,8 @@
   {
     "name": "Dried Aluminium Hydroxide 250mg, Magnesium Hydroxide 250mg a 170ML",
     "batch": "ML260315",
+    "hsn": "300490",
+    "drugCode": "198",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -382,6 +458,8 @@
   {
     "name": "Metronidazole Tablets IP 400mg",
     "batch": "GT50775",
+    "hsn": "300490",
+    "drugCode": "202",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -392,6 +470,8 @@
   {
     "name": "Omeprazole 20mg and Domperidone 10mg Capsules IP",
     "batch": "OPDC-1028",
+    "hsn": "30049034",
+    "drugCode": "206",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -402,6 +482,8 @@
   {
     "name": "Omeprazole Gastro-resistant Capsules IP 20 mg",
     "batch": "OMPC-1206",
+    "hsn": "300490",
+    "drugCode": "207",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -412,6 +494,8 @@
   {
     "name": "Pantoprazole Gastro Resistant Tablets IP 40 mg",
     "batch": "THE26009H1",
+    "hsn": "300490",
+    "drugCode": "212",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -422,6 +506,8 @@
   {
     "name": "Rabeprazole Gastro Resistant Tablets IP 20 mg",
     "batch": "TRA607",
+    "hsn": "300490",
+    "drugCode": "215",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -432,6 +518,8 @@
   {
     "name": "Ranitidine Tablets IP 300 mg",
     "batch": "RNBT1404",
+    "hsn": "300490",
+    "drugCode": "218",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -442,6 +530,8 @@
   {
     "name": "Calcium 500mg and Vitamin D3 250IU Tablets IP",
     "batch": "QJCT-017",
+    "hsn": "300450",
+    "drugCode": "220",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -452,6 +542,8 @@
   {
     "name": "Budesonide Respules 0.5 mg per",
     "batch": "2677015PM",
+    "hsn": "300490",
+    "drugCode": "235",
     "supplier": "G.P.SALES",
     "qty": 25,
     "minstock": 10,
@@ -462,6 +554,8 @@
   {
     "name": "Cetrizine Hydrochloride Tablets IP 10mg",
     "batch": "Z26-400",
+    "hsn": "300490",
+    "drugCode": "240",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -472,6 +566,8 @@
   {
     "name": "Etophyllin 77mg and Theophylline 23mg Tablets",
     "batch": "ET260401",
+    "hsn": "300490",
+    "drugCode": "245",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -482,6 +578,8 @@
   {
     "name": "Fexofenadine Tablets IP 120 mg",
     "batch": "26S2GTA224",
+    "hsn": "300490",
+    "drugCode": "246",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -492,6 +590,8 @@
   {
     "name": "Levocetrizine Tablets IP 5 mg",
     "batch": "PRT2603-119",
+    "hsn": "300490",
+    "drugCode": "248",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -502,6 +602,8 @@
   {
     "name": "Montelukast Sodium 10mg and Levocetirizine 5mg Tablets IP",
     "batch": "310226009",
+    "hsn": "300490",
+    "drugCode": "252",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -512,6 +614,8 @@
   {
     "name": "Salbutamol Inhalation IP 100mcg per puff",
     "batch": "IE26146",
+    "hsn": "300490",
+    "drugCode": "255",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -522,6 +626,8 @@
   {
     "name": "Amlodipine 5mg and Atenolol 50mg Tablets",
     "batch": "AMAT-1098",
+    "hsn": "300490",
+    "drugCode": "263",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -532,6 +638,8 @@
   {
     "name": "Atenolol Tablets IP 50 mg",
     "batch": "ATOT-1004",
+    "hsn": "300490",
+    "drugCode": "265",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -542,6 +650,8 @@
   {
     "name": "Atorvastatin Tablets IP 10mg",
     "batch": "BRF10126A",
+    "hsn": "300490",
+    "drugCode": "266",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -552,6 +662,8 @@
   {
     "name": "Atorvastatin Tablets IP 20mg",
     "batch": "CT25261357",
+    "hsn": "300490",
+    "drugCode": "267",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -562,6 +674,8 @@
   {
     "name": "Clonidine Tablets IP 0.1 mg",
     "batch": "T-2603281",
+    "hsn": "300490",
+    "drugCode": "268",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -572,6 +686,8 @@
   {
     "name": "Clopidogrel Tablets IP 75mg",
     "batch": "CPGT1277",
+    "hsn": "300490",
+    "drugCode": "269",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -582,6 +698,8 @@
   {
     "name": "Enalapril Tablets IP 5 mg",
     "batch": "TE-200035",
+    "hsn": "300490",
+    "drugCode": "275",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -592,6 +710,8 @@
   {
     "name": "Frusemide Tablets IP 40 mg",
     "batch": "TFU403",
+    "hsn": "300490",
+    "drugCode": "279",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -602,6 +722,8 @@
   {
     "name": "Losartan Tablets IP 25mg",
     "batch": "PRT2603-124",
+    "hsn": "300490",
+    "drugCode": "288",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -612,6 +734,8 @@
   {
     "name": "Metoprolol Tablets IP 25 mg",
     "batch": "CT26270263",
+    "hsn": "30049099",
+    "drugCode": "290",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -622,6 +746,8 @@
   {
     "name": "Metoprolol Extended release Tablets IP 50mg",
     "batch": "MPRMT-1078",
+    "hsn": "300490",
+    "drugCode": "291",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -632,6 +758,8 @@
   {
     "name": "Ramipril Tablets IP 2.5 mg",
     "batch": "BPRA26002",
+    "hsn": "300490",
+    "drugCode": "293",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -642,6 +770,8 @@
   {
     "name": "Telmisartan 40mg and Hydrochlorothiazide 12.5mg Tablets IP",
     "batch": "PRT2603-84",
+    "hsn": "300490",
+    "drugCode": "298",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -652,6 +782,8 @@
   {
     "name": "Telmisartan Tablets IP 20mg",
     "batch": "PRT-260501",
+    "hsn": "300490",
+    "drugCode": "299",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -662,6 +794,8 @@
   {
     "name": "Telmisartan Tablets IP 40mg",
     "batch": "TEP26019H1",
+    "hsn": "300490",
+    "drugCode": "300",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -672,6 +806,8 @@
   {
     "name": "Alprazolam Tablets IP 0.25 mg",
     "batch": "ARZMT-1022",
+    "hsn": "300490",
+    "drugCode": "313",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -682,6 +818,8 @@
   {
     "name": "Escitalopram Tablets IP 10 mg",
     "batch": "MT260337",
+    "hsn": "300490",
+    "drugCode": "321",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -692,6 +830,8 @@
   {
     "name": "Fluoxetine Hydrochloride Capsules IP 20mg",
     "batch": "CC25260294",
+    "hsn": "300490",
+    "drugCode": "325",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -702,6 +842,8 @@
   {
     "name": "Prednisolone Tablets IP 5 mg",
     "batch": "PDNT-1009",
+    "hsn": "300439",
+    "drugCode": "329",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -712,6 +854,8 @@
   {
     "name": "Prednisolone Tablets IP 10 mg",
     "batch": "PRDT-1060",
+    "hsn": "300439",
+    "drugCode": "330",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -722,6 +866,8 @@
   {
     "name": "Thyroxine Sodium Tablets IP 100 mcg",
     "batch": "16260466A",
+    "hsn": "300490",
+    "drugCode": "332",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -732,6 +878,8 @@
   {
     "name": "Allopurinol Tablets IP 100 mg",
     "batch": "Z26-334",
+    "hsn": "300490",
+    "drugCode": "336",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -742,6 +890,8 @@
   {
     "name": "Carboxymethylcellulose Sodium Eye Drops IP 0.5% w/v",
     "batch": "WEEX26010A",
+    "hsn": "300490",
+    "drugCode": "341",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -752,6 +902,8 @@
   {
     "name": "Ciprofloxacin Eye Drops IP 0.3% w/v",
     "batch": "Z26-369",
+    "hsn": "300420",
+    "drugCode": "344",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -762,6 +914,8 @@
   {
     "name": "Xylometazoline Nasal Drops IP 0.1%w/v",
     "batch": "Z26-371",
+    "hsn": "300490",
+    "drugCode": "351",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -772,6 +926,8 @@
   {
     "name": "Insulin Glargine Injection IP 100 IU per",
     "batch": "QAB10103",
+    "hsn": "300431",
+    "drugCode": "363",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -782,6 +938,8 @@
   {
     "name": "Gliclazide Extended release Tablets 60 mg",
     "batch": "BNZ06AGB",
+    "hsn": "300490",
+    "drugCode": "368",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -792,6 +950,8 @@
   {
     "name": "Voglibose Tablets IP 0.2 mg",
     "batch": "VLT1310",
+    "hsn": "300490",
+    "drugCode": "371",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -802,6 +962,8 @@
   {
     "name": "Cefixime 200mg and Ofloxacin 200mg Tablets",
     "batch": "MBT26088",
+    "hsn": "300420",
+    "drugCode": "381",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -812,6 +974,8 @@
   {
     "name": "Itraconazole Capsules 100 mg",
     "batch": "294226001",
+    "hsn": "300490",
+    "drugCode": "384",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -822,6 +986,8 @@
   {
     "name": "Rosuvastatin Tablets IP 20 mg",
     "batch": "310726004",
+    "hsn": "300490",
+    "drugCode": "418",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -832,6 +998,8 @@
   {
     "name": "Nebivolol Tablets IP 5 mg",
     "batch": "26S2GTA741",
+    "hsn": "300490",
+    "drugCode": "421",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -842,6 +1010,8 @@
   {
     "name": "Carvedilol Tablets IP 3.125 mg",
     "batch": "CT26270302",
+    "hsn": "300490",
+    "drugCode": "424",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -852,6 +1022,8 @@
   {
     "name": "S(-)Amlodipine Tablets IP 2.5 mg",
     "batch": "SABT1403",
+    "hsn": "300490",
+    "drugCode": "427",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -862,6 +1034,8 @@
   {
     "name": "Atorvastatin 10mg and Fenofibrate 160mg Tablets IP",
     "batch": "GT260658",
+    "hsn": "300490",
+    "drugCode": "429",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -872,6 +1046,8 @@
   {
     "name": "Olmesartan Medoxomil Tablets IP 40 mg",
     "batch": "CT25262059",
+    "hsn": "300490",
+    "drugCode": "432",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -882,6 +1058,8 @@
   {
     "name": "Propranolol Tablets IP 40 mg",
     "batch": "MT260271",
+    "hsn": "300490",
+    "drugCode": "434",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -892,6 +1070,8 @@
   {
     "name": "Rosuvastatin 10mg and Fenofibrate 160mg Tablets IP",
     "batch": "T-2604213",
+    "hsn": "300490",
+    "drugCode": "435",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -902,6 +1082,8 @@
   {
     "name": "Telmisartan 40mg and Chlorthalidone 12.5mg Tablets",
     "batch": "PRT2512-17",
+    "hsn": "300490",
+    "drugCode": "436",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -912,6 +1094,8 @@
   {
     "name": "Olmesartan Medoxomil 40mg and Hydrochlorothiazide 12.5mg",
     "batch": "PRT2602-59",
+    "hsn": "300490",
+    "drugCode": "439",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -922,6 +1106,8 @@
   {
     "name": "Metoprolol 50mg (Prolonged release) and",
     "batch": "BMDT26003",
+    "hsn": "30049074",
+    "drugCode": "440",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -932,6 +1118,8 @@
   {
     "name": "Olmesartan 20mg and Amlodipine 5mg Tablets",
     "batch": "OAMT-1008",
+    "hsn": "300490",
+    "drugCode": "445",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -942,6 +1130,8 @@
   {
     "name": "Spironolactone Tablets IP 25 mg",
     "batch": "SNT1402",
+    "hsn": "300490",
+    "drugCode": "449",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -952,6 +1142,8 @@
   {
     "name": "Atorvastatin Tablets IP 40 mg",
     "batch": "T-2605298",
+    "hsn": "300490",
+    "drugCode": "456",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -962,6 +1154,8 @@
   {
     "name": "Mupirocin Ointment IP 2 % w/w 5GM",
     "batch": "QJ-001",
+    "hsn": "300490",
+    "drugCode": "463",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -972,6 +1166,8 @@
   {
     "name": "Pantoprazole 40mg (Gastro-resistant) and Domperidone 30mg (P",
     "batch": "QPZJC-032",
+    "hsn": "30049099",
+    "drugCode": "465",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -982,6 +1178,8 @@
   {
     "name": "Ursodeoxycholic Acid Tablets IP 300 mg",
     "batch": "322026004",
+    "hsn": "300490",
+    "drugCode": "466",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -992,6 +1190,8 @@
   {
     "name": "Esomeprazole 40mg (Enteric-Coated) and Domperidone 30mg (Sus",
     "batch": "PRT-260503",
+    "hsn": "300490",
+    "drugCode": "472",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1002,6 +1202,8 @@
   {
     "name": "Pantoprazole 40mg (Enteric Coated) and Levosulpiride 75mg (S",
     "batch": "GC260276",
+    "hsn": "300490",
+    "drugCode": "473",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1012,6 +1214,8 @@
   {
     "name": "Liquid Paraffin 1.25ml, Milk of Magnesia 3.75ml and",
     "batch": "SLG-260222",
+    "hsn": "300490",
+    "drugCode": "476",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1022,6 +1226,8 @@
   {
     "name": "Esomeprazole 40mg (Enteric-coated) and Levosulpiride 75mg (S",
     "batch": "UGC26056",
+    "hsn": "300490",
+    "drugCode": "480",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1032,6 +1238,8 @@
   {
     "name": "Rabeprazole 20mg (Enteric Coated) and Levosulpiride 75mg (Su",
     "batch": "C-2605007",
+    "hsn": "300490",
+    "drugCode": "482",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1042,6 +1250,8 @@
   {
     "name": "Deflazacort Tablets 6 mg",
     "batch": "LJFW501",
+    "hsn": "300490",
+    "drugCode": "502",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1052,6 +1262,8 @@
   {
     "name": "Paracetamol Tablets IP 650 mg",
     "batch": "PRT2602-73",
+    "hsn": "300490",
+    "drugCode": "511",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1062,6 +1274,8 @@
   {
     "name": "Aceclofenac 100mg, Paracetamol 325mg and Serratiopeptidase",
     "batch": "GT50702",
+    "hsn": "300490",
+    "drugCode": "512",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1072,6 +1286,8 @@
   {
     "name": "Diclofenac 1.16%w/w, Linceed Oil 3%w/w,",
     "batch": "ACP063",
+    "hsn": "300490",
+    "drugCode": "525",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1082,6 +1298,8 @@
   {
     "name": "Paracetamol 325mg, Phenylephrine 10mg and Chlorpheniramine",
     "batch": "MT260972",
+    "hsn": "300420",
+    "drugCode": "528",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1092,6 +1310,8 @@
   {
     "name": "Levosalbutamol 1.25mg and Ipratropium 500mcg Respules",
     "batch": "5SN0120",
+    "hsn": "300490",
+    "drugCode": "529",
     "supplier": "G.P.SALES",
     "qty": 40,
     "minstock": 10,
@@ -1102,6 +1322,8 @@
   {
     "name": "Montelukast 10mg and Fexofenadine Hydrochloride 120mg Tablet",
     "batch": "MT261791",
+    "hsn": "300490",
+    "drugCode": "556",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1112,6 +1334,8 @@
   {
     "name": "Tamsulosin Hydrochloride 0.4mg and Dutasteride 0.5mg Tablets",
     "batch": "T-2604167",
+    "hsn": "300490",
+    "drugCode": "571",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1122,6 +1346,8 @@
   {
     "name": "Calcium Carbonate 500mg, Calcitriol 0.25mcg and Zinc 7.5mg",
     "batch": "0430326D",
+    "hsn": "300450",
+    "drugCode": "581",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1132,6 +1358,8 @@
   {
     "name": "Cholecalciferol Granules 60000 IU per gm 1S'",
     "batch": "UGS26058",
+    "hsn": "300450",
+    "drugCode": "585",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1142,6 +1370,8 @@
   {
     "name": "Vitamin E Softgel Capsules 400 mg",
     "batch": "113VR2534",
+    "hsn": "300450",
+    "drugCode": "588",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1152,6 +1382,8 @@
   {
     "name": "Pregabalin 75mg and Methylcobalamin 750mcg Tablets",
     "batch": "PRT2603-117",
+    "hsn": "300450",
+    "drugCode": "598",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1162,6 +1394,8 @@
   {
     "name": "Pregabalin Tablets 75 mg",
     "batch": "BNZ01AJB",
+    "hsn": "300450",
+    "drugCode": "599",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1172,6 +1406,8 @@
   {
     "name": "Ketoconazole Shampoo 2% W/V",
     "batch": "PK041",
+    "hsn": "300490",
+    "drugCode": "626",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1182,6 +1418,8 @@
   {
     "name": "Etophylline 115mg and Theophylline 35mg",
     "batch": "TE-230081",
+    "hsn": "300490",
+    "drugCode": "627",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1192,6 +1430,8 @@
   {
     "name": "Etophylline 231mg and Theophylline 69mg",
     "batch": "A260465A",
+    "hsn": "300490",
+    "drugCode": "628",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1202,6 +1442,8 @@
   {
     "name": "Clobetasol Propionate 0.05%w/w, Neomycin 0.50%w/w,",
     "batch": "6100",
+    "hsn": "300490",
+    "drugCode": "634",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1212,6 +1454,8 @@
   {
     "name": "ACECLOFENAC 100MG, PARACETAMOL 325MG AND CHLORZOXAZONE 250MG",
     "batch": "GT50830",
+    "hsn": "300490",
+    "drugCode": "637",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1222,6 +1466,8 @@
   {
     "name": "Terbutaline Suphate 1.25mg, Bromhexine 4mg, Guaiphenesin 50m",
     "batch": "B6C0179",
+    "hsn": "300490",
+    "drugCode": "639",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1232,6 +1478,8 @@
   {
     "name": "Diclofenac Dithylamine 1.16%w/w, Linseed Oil 3%w/w,",
     "batch": "DCL26006",
+    "hsn": "30049069",
+    "drugCode": "648",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1242,6 +1490,8 @@
   {
     "name": "Pepsin 7.5mg and Fungal Diastase Enyme 12.5mg Syrup",
     "batch": "MLS25874",
+    "hsn": "300450",
+    "drugCode": "655",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1252,6 +1502,8 @@
   {
     "name": "Glucosamine 750mg , Diacerein 50mg and Methylsulfonylmethane",
     "batch": "MT261213",
+    "hsn": "300490",
+    "drugCode": "670",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1262,6 +1514,8 @@
   {
     "name": "Mometasone Furoate Cream IP 0.1%w/w",
     "batch": "2604022",
+    "hsn": "300420",
+    "drugCode": "672",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1272,6 +1526,8 @@
   {
     "name": "Pantoprazole Sodium 40mg (Enteric Coated) and",
     "batch": "GC260307",
+    "hsn": "300490",
+    "drugCode": "685",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1282,6 +1538,8 @@
   {
     "name": "Lactulose 10gm per 15ml",
     "batch": "L-26006",
+    "hsn": "300490",
+    "drugCode": "687",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1292,6 +1550,8 @@
   {
     "name": "Glibenclamide 5mg and Metformin Hydrochloride 500mg Tablets",
     "batch": "MGS-25040",
+    "hsn": "30049099",
+    "drugCode": "713",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1302,6 +1562,8 @@
   {
     "name": "Escitalopram Oxelate 10mg and Clonazepam 0.5mg Tablets IP",
     "batch": "TEC-036",
+    "hsn": "300490",
+    "drugCode": "718",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1312,6 +1574,8 @@
   {
     "name": "Metformin Hydrochloride 1000mg (Prolonged Release) and",
     "batch": "MT261294",
+    "hsn": "300490",
+    "drugCode": "767",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1322,6 +1586,8 @@
   {
     "name": "Amitriptyline Hydrochloride Tablets IP 25mg",
     "batch": "MT260996",
+    "hsn": "300490",
+    "drugCode": "785",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1332,6 +1598,8 @@
   {
     "name": "Amitriptyline Hydrochloride Tablets IP 10mg",
     "batch": "APHT-1028",
+    "hsn": "300490",
+    "drugCode": "786",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1342,6 +1610,8 @@
   {
     "name": "Aspirin Enteric Coated Tablets IP 75mg",
     "batch": "TAGR-042",
+    "hsn": "300490",
+    "drugCode": "790",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1352,6 +1622,8 @@
   {
     "name": "Atenolol Tablets IP 25mg",
     "batch": "CT25262512A",
+    "hsn": "300490",
+    "drugCode": "793",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1362,6 +1634,8 @@
   {
     "name": "Aspirin 75mg (Enteric coated) and Atorvastatin 10mg Capsules",
     "batch": "AAC6001",
+    "hsn": "300490",
+    "drugCode": "796",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1372,6 +1646,8 @@
   {
     "name": "Biphasic Isophane Insulin Injection IP 100 IU/ml (30:70 ) (3 3 ml+ eris",
     "batch": "C25ITH4025",
+    "hsn": "300431",
+    "drugCode": "807",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1382,6 +1658,8 @@
   {
     "name": "Calcium Carbonate 1250mg, Vitamin D3 250IU,",
     "batch": "BNZ24AFB",
+    "hsn": "300450",
+    "drugCode": "817",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1392,6 +1670,8 @@
   {
     "name": "Carvedilol Tablets IP 6.25mg",
     "batch": "CT25262652",
+    "hsn": "300490",
+    "drugCode": "821",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1402,6 +1682,8 @@
   {
     "name": "Chlorthalidone Tablets IP 12.5mg",
     "batch": "CR2TG016",
+    "hsn": "300490",
+    "drugCode": "832",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1412,6 +1694,8 @@
   {
     "name": "Cilnidipine Tablets IP 20mg",
     "batch": "26S2GTB188",
+    "hsn": "300490",
+    "drugCode": "837",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1422,6 +1706,8 @@
   {
     "name": "Cilostazol Tablets IP 50mg",
     "batch": "CT25262508",
+    "hsn": "300490",
+    "drugCode": "838",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1432,6 +1718,8 @@
   {
     "name": "Febuxostat Tablets 40mg",
     "batch": "BRE05135A",
+    "hsn": "300490",
+    "drugCode": "888",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1442,6 +1730,8 @@
   {
     "name": "Frusemide 20mg and Spironolactone 50mg Tablets",
     "batch": "1452-23",
+    "hsn": "300490",
+    "drugCode": "899",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1452,6 +1742,8 @@
   {
     "name": "Glyceryl Trinitrate Controlled Release Tablets 2.6mg (Nitrog",
     "batch": "GLC26005G",
+    "hsn": "300490",
+    "drugCode": "906",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1462,6 +1754,8 @@
   {
     "name": "Hydrochlorothiazide Tablets IP 12.5mg",
     "batch": "HTT1330",
+    "hsn": "300490",
+    "drugCode": "912",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1472,6 +1766,8 @@
   {
     "name": "Isosorbidemononitrate Tablets IP 20mg",
     "batch": "ISMT-1009",
+    "hsn": "300490",
+    "drugCode": "923",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1482,6 +1778,8 @@
   {
     "name": "Ketoconazole Cream 2% w/w",
     "batch": "6P37",
+    "hsn": "300490",
+    "drugCode": "926",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1492,6 +1790,8 @@
   {
     "name": "Lorazepam Tablets IP 1mg",
     "batch": "4759",
+    "hsn": "300490",
+    "drugCode": "948",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1502,6 +1802,8 @@
   {
     "name": "Lorazepam Tablets IP 2mg",
     "batch": "4660",
+    "hsn": "300490",
+    "drugCode": "949",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1512,6 +1814,8 @@
   {
     "name": "Nebivolol Tablets IP 2.5mg 10's Pure &",
     "batch": "AUE02BOB",
+    "hsn": "300490",
+    "drugCode": "976",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1522,6 +1826,8 @@
   {
     "name": "Nitrofurantoin Tablets I.P 100mg",
     "batch": "T-2512126",
+    "hsn": "300490",
+    "drugCode": "987",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1532,6 +1838,8 @@
   {
     "name": "Olanzapine Tablets IP 5mg",
     "batch": "4698",
+    "hsn": "300490",
+    "drugCode": "991",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1542,6 +1850,8 @@
   {
     "name": "Olmesartan Medoxomil Tablets IP 20mg",
     "batch": "26S2GTA973",
+    "hsn": "300490",
+    "drugCode": "992",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1552,6 +1862,8 @@
   {
     "name": "Rosuvastatin Tablets IP 5mg",
     "batch": "BP6090",
+    "hsn": "300490",
+    "drugCode": "1044",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1562,6 +1874,8 @@
   {
     "name": "Tamsulosin Hydrochloride Prolonged Release Capsules IP 0.4mg",
     "batch": "CTPR-039",
+    "hsn": "300490",
+    "drugCode": "1072",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1572,6 +1886,8 @@
   {
     "name": "Telmisartan 40mg and Metoprolol 25mg Tablets",
     "batch": "UGT26487",
+    "hsn": "300490",
+    "drugCode": "1073",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1582,6 +1898,8 @@
   {
     "name": "Trihexyphenidyl Hydrochloride Tablets IP 2mg (Benzhexol",
     "batch": "4678",
+    "hsn": "300490",
+    "drugCode": "1087",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1592,6 +1910,8 @@
   {
     "name": "Trimetazidine Hydrochloride Modified Release Tablets 35 mg",
     "batch": "MT261729",
+    "hsn": "300490",
+    "drugCode": "1088",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1602,6 +1922,8 @@
   {
     "name": "Metformin Hydrochloride 500mg and Voglibose 0.3mg Tablets",
     "batch": "VM1TG013",
+    "hsn": "300490",
+    "drugCode": "1099",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1612,6 +1934,8 @@
   {
     "name": "Zolpidem Tablets IP 10mg",
     "batch": "ZO1TG006",
+    "hsn": "300490",
+    "drugCode": "1105",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1622,6 +1946,8 @@
   {
     "name": "Metoprolol Succinate 50mg (Extended Release) and",
     "batch": "MJG14",
+    "hsn": "300490",
+    "drugCode": "1106",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1632,6 +1958,8 @@
   {
     "name": "Clobazam Tablet IP 5mg",
     "batch": "CB1TG003",
+    "hsn": "300490",
+    "drugCode": "1110",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1642,6 +1970,8 @@
   {
     "name": "Gabapentin 400mg and Nortriptyline 10mg Tablets",
     "batch": "MT261207",
+    "hsn": "300490",
+    "drugCode": "1111",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1652,6 +1982,8 @@
   {
     "name": "Cinnarizine Tablets IP 25mg",
     "batch": "PRT-260519",
+    "hsn": "300490",
+    "drugCode": "1112",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1662,6 +1994,8 @@
   {
     "name": "Teneligliptin 20mg and Metformin Hydrochloride 500mg (Sustai",
     "batch": "MT261257",
+    "hsn": "300490",
+    "drugCode": "1129",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1672,6 +2006,8 @@
   {
     "name": "TENELIGLIPTIN 20MG AND METFORMIN HYDROCHLORIDE 1000MG (SUSTA",
     "batch": "MT261269",
+    "hsn": "300490",
+    "drugCode": "1130",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1682,6 +2018,8 @@
   {
     "name": "Thyroxine Sodium Tablets IP 50mcg",
     "batch": "Z25-1275",
+    "hsn": "300190",
+    "drugCode": "1221",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1692,6 +2030,8 @@
   {
     "name": "Iron 50mg, Folic Acid 0.5mg and Zinc 61.8mg Capsules",
     "batch": "CJA-26233",
+    "hsn": "300490",
+    "drugCode": "1223",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1702,6 +2042,8 @@
   {
     "name": "Albendazole Tablets IP 400mg",
     "batch": "Z26-348",
+    "hsn": "300490",
+    "drugCode": "1236",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1712,6 +2054,8 @@
   {
     "name": "Gliclazide 80mg and Metformin Hydrochloride 500mg Tablets",
     "batch": "TGM603",
+    "hsn": "300490",
+    "drugCode": "1240",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1722,6 +2066,8 @@
   {
     "name": "Diphenhydramine 13-15mg, Ammonium Chloride 135-150mg , Sodiu 100ML",
     "batch": "DMMS-1163",
+    "hsn": "300490",
+    "drugCode": "1254",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1732,6 +2078,8 @@
   {
     "name": "Cilnidipine 10mg and Telmisartan 40mg Tablets",
     "batch": "PRT2602-32",
+    "hsn": "300490",
+    "drugCode": "1284",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1742,6 +2090,8 @@
   {
     "name": "Escitalopram Oxalate 5mg and Clonazepam 0.5mg Tablets IP",
     "batch": "MT261204",
+    "hsn": "300490",
+    "drugCode": "1306",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1752,6 +2102,8 @@
   {
     "name": "Gabapentin Tablets IP 100 mg",
     "batch": "PT50086A",
+    "hsn": "300490",
+    "drugCode": "1319",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1762,6 +2114,8 @@
   {
     "name": "Olmesartan Medoxomil 20mg and Hydrochlorothiazide 12.5mg",
     "batch": "PRT2602-56",
+    "hsn": "300490",
+    "drugCode": "1368",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1772,6 +2126,8 @@
   {
     "name": "Pregabalin 75mg and Nortriptyline 10mg Tablets",
     "batch": "26S2GTB235",
+    "hsn": "300490",
+    "drugCode": "1383",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1782,6 +2138,8 @@
   {
     "name": "Quetiapine Tablets IP 25 mg",
     "batch": "4669",
+    "hsn": "300490",
+    "drugCode": "1384",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1792,6 +2150,8 @@
   {
     "name": "Rosuvastatin 10mg and Aspirin 75mg Capsules 10's Pure &",
     "batch": "AUE05ANB",
+    "hsn": "300490",
+    "drugCode": "1392",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1802,6 +2162,8 @@
   {
     "name": "Rosuvastatin 10mg and Clopidogrel 75mg Capsules",
     "batch": "WRV26006G",
+    "hsn": "300490",
+    "drugCode": "1393",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1812,6 +2174,8 @@
   {
     "name": "Telmisartan 40mg, Amlodipine 5mg and Hydrochlorothiazide",
     "batch": "ST26-0894",
+    "hsn": "300490",
+    "drugCode": "1410",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1822,6 +2186,8 @@
   {
     "name": "METFORMIN HYDROCHLORIDE 500MG(SR)& GLIMEPIRIDE 2MG",
     "batch": "GBMT-1128",
+    "hsn": "300490",
+    "drugCode": "1438",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1832,6 +2198,8 @@
   {
     "name": "Protein Powder 250g",
     "batch": "ZJAC010326",
+    "hsn": "210690",
+    "drugCode": "1440",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1842,6 +2210,8 @@
   {
     "name": "Nirmal (Nicotine Polacrilex Chewing Gum 2 mg) 1x9's",
     "batch": "B100579484",
+    "hsn": "300490",
+    "drugCode": "1441",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1852,6 +2222,8 @@
   {
     "name": "Jan Pudina Soft Gel Capsules",
     "batch": "G02026",
+    "hsn": "300490",
+    "drugCode": "1445",
     "supplier": "G.P.SALES",
     "qty": 20,
     "minstock": 10,
@@ -1862,6 +2234,8 @@
   {
     "name": "L-Arginine Granules 3g",
     "batch": "UGS26049",
+    "hsn": "300490",
+    "drugCode": "1455",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1872,6 +2246,8 @@
   {
     "name": "Itraconazole Capsules 200 mg",
     "batch": "PC50009A",
+    "hsn": "300490",
+    "drugCode": "1456",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1882,6 +2258,8 @@
   {
     "name": "Luliconazole Cream 1% w/w 10GMS",
     "batch": "PO40010",
+    "hsn": "300490",
+    "drugCode": "1457",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1892,6 +2270,8 @@
   {
     "name": "Vildagliptin Tablets 50mg",
     "batch": "MT261097",
+    "hsn": "300490",
+    "drugCode": "1461",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1902,6 +2282,8 @@
   {
     "name": "Vildagliptin 50mg and Metformin 500mg Tablets",
     "batch": "26L3GTA093",
+    "hsn": "300490",
+    "drugCode": "1462",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1912,6 +2294,8 @@
   {
     "name": "Vildagliptin 50mg and Metformin 1000mg Tablets",
     "batch": "25L3GTA013",
+    "hsn": "300490",
+    "drugCode": "1463",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1922,6 +2306,8 @@
   {
     "name": "Protein Powder (Vanilla) 250 gm 250G",
     "batch": "ZJAV010326",
+    "hsn": "210690",
+    "drugCode": "1466",
     "supplier": "G.P.SALES",
     "qty": 3,
     "minstock": 10,
@@ -1932,6 +2318,8 @@
   {
     "name": "Protein Powder (Kesar Pista)",
     "batch": "ZJAK010326",
+    "hsn": "210690",
+    "drugCode": "1467",
     "supplier": "G.P.SALES",
     "qty": 3,
     "minstock": 10,
@@ -1942,6 +2330,8 @@
   {
     "name": "Janaushadhi Poshan with Cocoa 500gm",
     "batch": "KPC602",
+    "hsn": "190190",
+    "drugCode": "1471",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -1952,6 +2342,8 @@
   {
     "name": "METFORMIN 500MG (PROLONGED RELEASE) AND GLIMEPIRIDE 0.5MG",
     "batch": "MT261050",
+    "hsn": "300490",
+    "drugCode": "1480",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1962,6 +2354,8 @@
   {
     "name": "METFORMIN 1000MG (PROLONGED RELEASE) AND GLIMEPIRIDE 1MG",
     "batch": "MT244507",
+    "hsn": "300490",
+    "drugCode": "1481",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1972,6 +2366,8 @@
   {
     "name": "ATORVASTATIN 20MG AND CLOPIDOGREL 75MG CAPSULES 10's Pure &",
     "batch": "AUE08AYB",
+    "hsn": "300490",
+    "drugCode": "1516",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1982,6 +2378,8 @@
   {
     "name": "ATORVASTATIN 20MG, CLOPIDOGREL 75MG AND ASPIRIN 75MG CAPSULE",
     "batch": "WAD26003G",
+    "hsn": "300490",
+    "drugCode": "1517",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -1992,6 +2390,8 @@
   {
     "name": "CALCIUM 1250MG, CALCITRIOL 0.25MCG AND VITAMIN K2-7 45MCG",
     "batch": "0230326D",
+    "hsn": "300490",
+    "drugCode": "1541",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2002,6 +2402,8 @@
   {
     "name": "CARBOXYMETHLYCELLULOSE EYE DROPS IP 1% W/V",
     "batch": "PLM2606",
+    "hsn": "300490",
+    "drugCode": "1545",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -2012,6 +2414,8 @@
   {
     "name": "CHOLECALCIFEROL CHEWABLE TABLETS",
     "batch": "298526001",
+    "hsn": "300490",
+    "drugCode": "1564",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2022,6 +2426,8 @@
   {
     "name": "CILNIDIPINE TABLETS IP",
     "batch": "MT261003",
+    "hsn": "300490",
+    "drugCode": "1565",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2032,6 +2438,8 @@
   {
     "name": "DAPAGLIFLOZIN TABLETS",
     "batch": "BP6059",
+    "hsn": "300490",
+    "drugCode": "1592",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2042,6 +2450,8 @@
   {
     "name": "FERROUS ASCORBATE 100MG, FOLIC ACID 1.5MG AND",
     "batch": "FAZT-1074",
+    "hsn": "300490",
+    "drugCode": "1622",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2052,6 +2462,8 @@
   {
     "name": "GABAPENTIN 100 MG AND NORTRYPTYLINE 10 MG TABLET",
     "batch": "PRT2603-27",
+    "hsn": "300490",
+    "drugCode": "1639",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2062,6 +2474,8 @@
   {
     "name": "GABAPENTIN 300MG AND METHYLCOBALAMIN 500MCG TABLET",
     "batch": "GPMT-1012",
+    "hsn": "300490",
+    "drugCode": "1640",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2072,6 +2486,8 @@
   {
     "name": "GUAIFENESIN 50MG, TERBUTALINE 1.25 MG AND BROMHEXINE 2 MG EX 100ML",
     "batch": "ML260180",
+    "hsn": "300490",
+    "drugCode": "1657",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2082,6 +2498,8 @@
   {
     "name": "IVABRADINE TABLETS 5MG",
     "batch": "MT261063",
+    "hsn": "300490",
+    "drugCode": "1671",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2092,6 +2510,8 @@
   {
     "name": "LEVETIRACETAM TABLETS IP",
     "batch": "PRT2602-54",
+    "hsn": "300490",
+    "drugCode": "1681",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2102,6 +2522,8 @@
   {
     "name": "LEVOCETIRIZINE DIHYDROCHLORIDE TABLETS IP 10MG",
     "batch": "BNZ07AAB",
+    "hsn": "300490",
+    "drugCode": "1683",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2112,6 +2534,8 @@
   {
     "name": "LINAGLIPTIN TABLETS 5MG",
     "batch": "MT261117",
+    "hsn": "300490",
+    "drugCode": "1696",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2122,6 +2546,8 @@
   {
     "name": "METOPROLOL SUCCINATE PROLONGED RELEASE TABLETS IP 25MG",
     "batch": "PT50075A",
+    "hsn": "300490",
+    "drugCode": "1708",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2132,6 +2558,8 @@
   {
     "name": "NICORANDIL TABLET IP 10MG",
     "batch": "NRDT-1011",
+    "hsn": "300490",
+    "drugCode": "1718",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2142,6 +2570,8 @@
   {
     "name": "NICORANDIL TABLET IP 5MG",
     "batch": "STG-260552",
+    "hsn": "300490",
+    "drugCode": "1719",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2152,6 +2582,8 @@
   {
     "name": "PHENYLEPHRINE 5 MG,CHLORPHENIRAMINE 2 MG AND DEXTROMETHORPHA",
     "batch": "ML260357",
+    "hsn": "300490",
+    "drugCode": "1758",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -2162,6 +2594,8 @@
   {
     "name": "PREGABALIN 75 MG AND METHYLCOBALAMIN",
     "batch": "PRT2602-105",
+    "hsn": "300490",
+    "drugCode": "1764",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2172,6 +2606,8 @@
   {
     "name": "ROSUVASTATIN TABLETS IP 40MG",
     "batch": "MT260986",
+    "hsn": "300490",
+    "drugCode": "1784",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2182,6 +2618,8 @@
   {
     "name": "ROSUVASTATIN 10MG, ASPIRIN 75MG AND CLOPIDOGREL 75MG CAPSULE",
     "batch": "RCAC-1019",
+    "hsn": "300490",
+    "drugCode": "1785",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2192,6 +2630,8 @@
   {
     "name": "ROSUVASTATIN 20MG, ASPIRIN 75MG AND CLOPIDOGREL 75MG CAPSULE",
     "batch": "MC260187",
+    "hsn": "300490",
+    "drugCode": "1786",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2202,6 +2642,8 @@
   {
     "name": "SITAGLIPTIN PHOSPHATE & METFORMIN HYDROCHLORIDE TABLETS (50",
     "batch": "2510255",
+    "hsn": "300490",
+    "drugCode": "1801",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2212,6 +2654,8 @@
   {
     "name": "SITAGLIPTIN PHOSPHATE TABLETS IP (50MG)",
     "batch": "ST260502",
+    "hsn": "300490",
+    "drugCode": "1804",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2222,6 +2666,8 @@
   {
     "name": "TELMISARTAN TABLETS IP 80MG",
     "batch": "PT50048A",
+    "hsn": "300490",
+    "drugCode": "1813",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2232,6 +2678,8 @@
   {
     "name": "TICAGRELOR TABLETS 90MG",
     "batch": "26S2GTA619",
+    "hsn": "300490",
+    "drugCode": "1819",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2242,6 +2690,8 @@
   {
     "name": "TORSEMIDE 10MG AND SPIRONOLACTONE 50MG TABLETS",
     "batch": "MT261279",
+    "hsn": "300490",
+    "drugCode": "1825",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2252,6 +2702,8 @@
   {
     "name": "VITAMIN D3 ORAL SOLUTION",
     "batch": "CIL07AAB",
+    "hsn": "300420",
+    "drugCode": "1841",
     "supplier": "G.P.SALES",
     "qty": 4,
     "minstock": 10,
@@ -2262,6 +2714,8 @@
   {
     "name": "VOGLIBOSE 0.2MG, GLIMEPIRIDE 1MG AND",
     "batch": "TV-810033",
+    "hsn": "300490",
+    "drugCode": "1843",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2272,6 +2726,8 @@
   {
     "name": "Vitamin-C Chewable Tablets 500mg",
     "batch": "TFY26011AL",
+    "hsn": "300450",
+    "drugCode": "1849",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2282,6 +2738,8 @@
   {
     "name": "SILODOSIN CAPSULES",
     "batch": "CC25260306",
+    "hsn": "300490",
+    "drugCode": "1866",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2292,6 +2750,8 @@
   {
     "name": "SILODOSIN 8MG AND DUTASTERIDE 0.5MG CAPSULES",
     "batch": "MC260124",
+    "hsn": "300490",
+    "drugCode": "1868",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2302,6 +2762,8 @@
   {
     "name": "METHYLCOBALAMIN TABLET 1500MCG",
     "batch": "PRT2603-20",
+    "hsn": "300490",
+    "drugCode": "1961",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2312,6 +2774,8 @@
   {
     "name": "METHYLCOBALAMIN TABLET 500MCG",
     "batch": "PRT2602-04",
+    "hsn": "300490",
+    "drugCode": "1962",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2322,6 +2786,8 @@
   {
     "name": "PANTOPRAZOLE GASTRO-RESISTANCE TABLETS IP 20MG",
     "batch": "BPPN26002",
+    "hsn": "300490",
+    "drugCode": "2038",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2332,6 +2798,8 @@
   {
     "name": "CHOLECALCIFEROL SOFT GELATIN CAPSULE",
     "batch": "VHD2603067",
+    "hsn": "300490",
+    "drugCode": "2047",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2342,6 +2810,8 @@
   {
     "name": "AMLODIPINE TABLET IP 10MG",
     "batch": "BPMT26003",
+    "hsn": "300490",
+    "drugCode": "2050",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2352,6 +2822,8 @@
   {
     "name": "METFORMIN HYDROCHLORIDE (EAXTENDED REALSE) 500MG AND",
     "batch": "MT261201",
+    "hsn": "300490",
+    "drugCode": "2100",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2362,6 +2834,8 @@
   {
     "name": "DAPAGLIFLOZIN TABLETS 5MG",
     "batch": "T-2603189",
+    "hsn": "300490",
+    "drugCode": "2101",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2372,6 +2846,8 @@
   {
     "name": "BILASTINE 20MG MONTELUKAST 10MG TABLETS",
     "batch": "MT261761",
+    "hsn": "300490",
+    "drugCode": "2156",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2382,6 +2858,8 @@
   {
     "name": "GUAIFENESIN 100MG, TERBUTALINE 1.25 MG AND AMBROXOL 15MG",
     "batch": "L-2603012",
+    "hsn": "300449",
+    "drugCode": "2217",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -2392,6 +2870,8 @@
   {
     "name": "ALPHA KETOANALOUGE AND ESSENTIAL AMINO ACID TABLETS",
     "batch": "T-2601156",
+    "hsn": "300490",
+    "drugCode": "2221",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2402,6 +2882,8 @@
   {
     "name": "DAPAGLIFLOZIN 10MG AND SITAGLIPTIN 100MG TABLETS",
     "batch": "GT260672",
+    "hsn": "300490",
+    "drugCode": "2273",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2412,6 +2894,8 @@
   {
     "name": "SITAGLIPTIN 50MG AND METFORMIN 500MG EXTENDED RELEASE TABLET",
     "batch": "GT261035",
+    "hsn": "300490",
+    "drugCode": "2364",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2422,6 +2906,8 @@
   {
     "name": "DAPAGLIFLOZIN 10MG+ VILDAGLIPTIN 100MG TABLETS",
     "batch": "MT261019",
+    "hsn": "300490",
+    "drugCode": "2409",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2432,6 +2918,8 @@
   {
     "name": "LULICONAZOLE CREAM IP 1% W/W 30GM 30gm",
     "batch": "6P30",
+    "hsn": "300490",
+    "drugCode": "2433",
     "supplier": "G.P.SALES",
     "qty": 5,
     "minstock": 10,
@@ -2442,6 +2930,8 @@
   {
     "name": "Adhesive Bandages Washproof 19 mmx72 mm or 19mm X 70 mm cont",
     "batch": "BWP-K25357",
+    "hsn": "300590",
+    "drugCode": "5009",
     "supplier": "G.P.SALES",
     "qty": 100,
     "minstock": 10,
@@ -2452,6 +2942,8 @@
   {
     "name": "Syringe 2 ml with needle 24G",
     "batch": "B26116",
+    "hsn": "901831",
+    "drugCode": "5010",
     "supplier": "G.P.SALES",
     "qty": 100,
     "minstock": 10,
@@ -2462,6 +2954,8 @@
   {
     "name": "GLUCOMETER TEST STRIP 25 Strips",
     "batch": "GSO4260144",
+    "hsn": "901890",
+    "drugCode": "8121",
     "supplier": "G.P.SALES",
     "qty": 10,
     "minstock": 10,
@@ -2472,6 +2966,8 @@
   {
     "name": "Oxo-Biodegradable Sanitary Napkins Extra Large (XL) Size wit",
     "batch": "MDPMXL01",
+    "hsn": "961900",
+    "drugCode": "8142",
     "supplier": "G.P.SALES",
     "qty": 200,
     "minstock": 10,

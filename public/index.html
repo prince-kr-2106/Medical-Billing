@@ -147,9 +147,9 @@
   .dropzone{border:1.5px dashed var(--border); border-radius:12px; padding:36px 20px; text-align:center; color:var(--ink-soft); cursor:pointer; background:var(--surface);}
   .dropzone:hover{border-color:var(--teal);}
   .dropzone.drag{border-color:var(--teal); background:var(--teal-bg);}
-  .review-row{display:grid; grid-template-columns:1.8fr 1fr .9fr .9fr .8fr .8fr .4fr; gap:8px; padding:10px 18px; align-items:center; border-bottom:1px solid var(--border-soft); font-size:13px;}
+  .review-row{display:grid; grid-template-columns:1.5fr .8fr .6fr .7fr .5fr .7fr .7fr .8fr .4fr; gap:8px; min-width:820px; padding:10px 18px; align-items:center; border-bottom:1px solid var(--border-soft); font-size:13px;}
   .review-row input{padding:6px 8px; border-radius:6px; border:1px solid var(--border); font-size:12.5px; width:100%;}
-  .review-head{display:grid; grid-template-columns:1.8fr 1fr .9fr .9fr .8fr .8fr .4fr; gap:8px; padding:10px 18px; font-size:10.5px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-soft); background:var(--gray-bg);}
+  .review-head{display:grid; grid-template-columns:1.5fr .8fr .6fr .7fr .5fr .7fr .7fr .8fr .4fr; gap:8px; min-width:820px; padding:10px 18px; font-size:10.5px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-soft); background:var(--gray-bg);}
 
   .report-box{padding:22px; font-size:14px; line-height:1.7;}
   .report-box h3{font-family:'Space Grotesk'; font-size:15px; margin:18px 0 8px;}
@@ -346,8 +346,10 @@
         <span style="font-size:12.5px; color:var(--ink-soft);">Check every row before adding.</span>
       </div>
       <div class="card">
-        <div class="review-head"><div>Name</div><div>Batch</div><div>Qty</div><div>Purchase ₹</div><div>Sell ₹</div><div>Expiry</div><div></div></div>
-        <div id="reviewBody"></div>
+        <div class="table-scroll">
+          <div class="review-head"><div>Name</div><div>Batch</div><div>HSN</div><div>Drug code</div><div>Qty</div><div>Purchase ₹</div><div>Sell ₹</div><div>Expiry</div><div></div></div>
+          <div id="reviewBody"></div>
+        </div>
       </div>
       <div style="display:flex; gap:10px; margin-top:14px;">
         <button class="btn" id="addRowBtn">+ Add row manually</button>
@@ -795,6 +797,7 @@ async function handleJson(file){
     if(!Array.isArray(data)) throw new Error('Expected a JSON array');
     extractedRows = data.map(row => ({
       rid: 'r' + (rowCounter++), name: row.name || '', batch: row.batch || '',
+      hsn: row.hsn || '', drugCode: row.drugCode || '',
       qty: Number(row.qty) || 0, purchase: Number(row.purchase) || 0, sell: Number(row.sell) || 0, expiry: row.expiry || ''
     }));
     if(data[0] && data[0].supplier && !document.getElementById('importSupplier').value) document.getElementById('importSupplier').value = data[0].supplier;
@@ -850,7 +853,7 @@ function parseInvoiceText(text){
       if(parts.length === 2){ let [mm,yy] = parts; if(yy.length===2) yy='20'+yy; if(Number(mm)>=1 && Number(mm)<=12) expiry = `${yy}-${mm.padStart(2,'0')}-01`; }
     }
     const batchMatch = line.match(batchRe);
-    extractedRows.push({rid:'r'+(rowCounter++), name:namePart, batch: batchMatch?batchMatch[1]:'', qty:Math.round(qty)||1, purchase:purchase||0, sell:purchase?Math.round(purchase*1.2*100)/100:0, expiry});
+    extractedRows.push({rid:'r'+(rowCounter++), name:namePart, batch: batchMatch?batchMatch[1]:'', hsn:'', drugCode:'', qty:Math.round(qty)||1, purchase:purchase||0, sell:purchase?Math.round(purchase*1.2*100)/100:0, expiry});
   });
   renderReview();
 }
@@ -865,6 +868,8 @@ function renderReview(){
     el.innerHTML = `
       <input value="${escapeHtml(row.name)}" data-f="name" data-id="${row.rid}">
       <input value="${escapeHtml(row.batch)}" data-f="batch" data-id="${row.rid}">
+      <input value="${escapeHtml(row.hsn || '')}" data-f="hsn" data-id="${row.rid}">
+      <input value="${escapeHtml(row.drugCode || '')}" data-f="drugCode" data-id="${row.rid}">
       <input type="number" value="${row.qty}" data-f="qty" data-id="${row.rid}">
       <input type="number" step="0.01" value="${row.purchase}" data-f="purchase" data-id="${row.rid}">
       <input type="number" step="0.01" value="${row.sell}" data-f="sell" data-id="${row.rid}">
@@ -880,7 +885,7 @@ function renderReview(){
   body.querySelectorAll('[data-rmrow]').forEach(btn => btn.addEventListener('click', () => { extractedRows = extractedRows.filter(r => r.rid !== btn.dataset.rmrow); renderReview(); }));
 }
 document.getElementById('addRowBtn').addEventListener('click', () => {
-  extractedRows.push({rid:'r'+(rowCounter++), name:'', batch:'', qty:0, purchase:0, sell:0, expiry:''});
+  extractedRows.push({rid:'r'+(rowCounter++), name:'', batch:'', hsn:'', drugCode:'', qty:0, purchase:0, sell:0, expiry:''});
   renderReview();
 });
 document.getElementById('commitImportBtn').addEventListener('click', async () => {
