@@ -37,12 +37,17 @@ async function initDb() {
       id TEXT PRIMARY KEY,
       bill_date TIMESTAMPTZ NOT NULL DEFAULT now(),
       customer TEXT DEFAULT 'Walk-in customer',
+      customer_phone TEXT DEFAULT '',
+      payment_mode TEXT DEFAULT 'Cash',
       subtotal NUMERIC(12,2) NOT NULL DEFAULT 0,
       discount NUMERIC(12,2) NOT NULL DEFAULT 0,
       tax NUMERIC(12,2) NOT NULL DEFAULT 0,
       total NUMERIC(12,2) NOT NULL DEFAULT 0
     );
   `);
+  // Safe to run repeatedly — adds these columns if the bills table already existed before this feature
+  await pool.query(`ALTER TABLE bills ADD COLUMN IF NOT EXISTS customer_phone TEXT DEFAULT '';`);
+  await pool.query(`ALTER TABLE bills ADD COLUMN IF NOT EXISTS payment_mode TEXT DEFAULT 'Cash';`);
 
   await pool.query(`
     CREATE TABLE IF NOT EXISTS bill_items (

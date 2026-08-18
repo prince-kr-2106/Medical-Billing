@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
   :root{
     --bg:#F5F6F1; --surface:#FFFFFF; --ink:#16332C; --ink-soft:#4A5C56;
@@ -133,6 +134,11 @@
 
   .bill-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:20px; align-items:flex-start;}
   .med-search-wrap{position:relative;}
+  .payment-modes{display:flex; flex-wrap:wrap; gap:8px;}
+  .pay-chip{display:flex; align-items:center; gap:7px; padding:8px 13px; border-radius:20px; border:1px solid var(--border); font-size:13px; cursor:pointer; color:var(--ink-soft); background:var(--surface); transition:all .12s ease;}
+  .pay-chip:hover{border-color:var(--ink);}
+  .pay-chip.active{border-color:var(--ink); color:var(--ink); background:var(--gray-bg); font-weight:500;}
+  .pay-dot{width:9px; height:9px; border-radius:50%; display:inline-block; flex-shrink:0;}
   .suggest{position:absolute; top:44px; left:0; right:0; background:var(--surface); border:1px solid var(--border); border-radius:9px; max-height:240px; overflow-y:auto; z-index:10; display:none;}
   .suggest.show{display:block;}
   .suggest-item{padding:10px 14px; cursor:pointer; font-size:13.5px; border-bottom:1px solid var(--border-soft);}
@@ -293,9 +299,15 @@
   <div id="tab-billing" class="tab-content" style="display:none;">
     <div class="bill-grid">
       <div class="card" style="padding:18px;">
-        <div class="med-search-wrap">
-          <input class="search" id="billSearch" placeholder="Search medicine to add to bill" autocomplete="off">
-          <div class="suggest" id="billSuggest"></div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <div class="med-search-wrap" style="flex:1; min-width:180px;">
+            <input class="search" id="billSearchName" placeholder="Search by medicine name" autocomplete="off">
+            <div class="suggest" id="billSuggestName"></div>
+          </div>
+          <div class="med-search-wrap" style="flex:1; min-width:180px;">
+            <input class="search" id="billSearchCode" placeholder="Search by drug code" autocomplete="off">
+            <div class="suggest" id="billSuggestCode"></div>
+          </div>
         </div>
         <div id="cartBody" style="margin-top:16px;">
           <div class="empty" id="cartEmpty"><h3>Cart is empty</h3><p>Search and add medicines to start a bill.</p></div>
@@ -303,9 +315,20 @@
       </div>
       <div class="card" style="padding:18px;">
         <div class="field"><label>Customer name (optional)</label><input id="billCustomer" placeholder="Walk-in customer"></div>
+        <div class="field"><label>Customer phone (optional, for WhatsApp)</label><input id="billPhone" type="tel" placeholder="98765 43210"></div>
         <div class="field-row">
           <div class="field"><label>Discount (%)</label><input id="billDiscount" type="number" min="0" max="100" value="0"></div>
           <div class="field"><label>GST / Tax (%)</label><input id="billTax" type="number" min="0" max="100" value="0"></div>
+        </div>
+        <div class="field">
+          <label>Payment mode</label>
+          <div class="payment-modes" id="paymentModes">
+            <div class="pay-chip active" data-mode="Cash"><span class="pay-dot" style="background:#8A8175;"></span>Cash</div>
+            <div class="pay-chip" data-mode="UPI"><span class="pay-dot" style="background:#2E7D6B;"></span>UPI</div>
+            <div class="pay-chip" data-mode="PhonePe"><span class="pay-dot" style="background:#5F259F;"></span>PhonePe</div>
+            <div class="pay-chip" data-mode="Google Pay"><span class="pay-dot" style="background:#4285F4;"></span>Google Pay</div>
+            <div class="pay-chip" data-mode="Paytm"><span class="pay-dot" style="background:#00BAF2;"></span>Paytm</div>
+          </div>
         </div>
         <div class="summary-line"><span>Subtotal</span><span class="mono" id="sumSub">₹0</span></div>
         <div class="summary-line"><span>Discount</span><span class="mono" id="sumDisc">−₹0</span></div>
@@ -353,6 +376,7 @@
       </div>
       <div style="display:flex; gap:10px; margin-top:14px;">
         <button class="btn" id="addRowBtn">+ Add row manually</button>
+        <button class="btn" id="clearReviewBtn" style="color:var(--red); border-color:var(--red-bg);">Clear</button>
         <button class="btn btn-primary" id="commitImportBtn">Save</button>
       </div>
     </div>
@@ -647,22 +671,39 @@ document.querySelectorAll('#filterChips .chip').forEach(chip => {
 });
 
 /* ================= BILLING ================= */
-const billSearch = document.getElementById('billSearch');
-const billSuggest = document.getElementById('billSuggest');
-billSearch.addEventListener('input', () => {
-  const q = billSearch.value.trim().toLowerCase();
-  if(!q){ billSuggest.classList.remove('show'); return; }
-  const matches = items.filter(it => Number(it.qty) > 0 && it.name.toLowerCase().includes(q)).slice(0, 8);
-  if(!matches.length){ billSuggest.innerHTML = '<div class="suggest-item">No matching medicine in stock</div>'; billSuggest.classList.add('show'); return; }
-  billSuggest.innerHTML = matches.map(it => `
-    <div class="suggest-item" data-id="${it.id}"><div>${escapeHtml(it.name)}</div>
-      <div class="s-meta">Batch ${escapeHtml(it.batch||'—')} · ${it.qty} in stock · ${fmtMoney(it.sell)}/unit</div></div>`).join('');
-  billSuggest.classList.add('show');
-  billSuggest.querySelectorAll('.suggest-item[data-id]').forEach(el => {
-    el.addEventListener('click', () => { addToCart(el.dataset.id); billSearch.value=''; billSuggest.classList.remove('show'); });
+function setupBillSearch(inputEl, suggestEl, matchFn, noMatchLabel){
+  inputEl.addEventListener('input', () => {
+    const q = inputEl.value.trim().toLowerCase();
+    if(!q){ suggestEl.classList.remove('show'); return; }
+    const matches = items.filter(it => Number(it.qty) > 0 && matchFn(it, q)).slice(0, 8);
+    if(!matches.length){ suggestEl.innerHTML = `<div class="suggest-item">${noMatchLabel}</div>`; suggestEl.classList.add('show'); return; }
+    suggestEl.innerHTML = matches.map(it => `
+      <div class="suggest-item" data-id="${it.id}"><div>${escapeHtml(it.name)}</div>
+        <div class="s-meta">Batch ${escapeHtml(it.batch||'—')} · Code ${escapeHtml(it.drug_code||'—')} · ${it.qty} in stock · ${fmtMoney(it.sell)}/unit</div></div>`).join('');
+    suggestEl.classList.add('show');
+    suggestEl.querySelectorAll('.suggest-item[data-id]').forEach(el => {
+      el.addEventListener('click', () => { addToCart(el.dataset.id); inputEl.value=''; suggestEl.classList.remove('show'); });
+    });
+  });
+}
+const billSearchName = document.getElementById('billSearchName');
+const billSuggestName = document.getElementById('billSuggestName');
+const billSearchCode = document.getElementById('billSearchCode');
+const billSuggestCode = document.getElementById('billSuggestCode');
+setupBillSearch(billSearchName, billSuggestName, (it, q) => it.name.toLowerCase().includes(q), 'No matching medicine name in stock');
+setupBillSearch(billSearchCode, billSuggestCode, (it, q) => (it.drug_code||'').toLowerCase().includes(q), 'No matching drug code in stock');
+document.addEventListener('click', e => {
+  if(!e.target.closest('.med-search-wrap')){ billSuggestName.classList.remove('show'); billSuggestCode.classList.remove('show'); }
+});
+
+let selectedPaymentMode = 'Cash';
+document.querySelectorAll('#paymentModes .pay-chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('#paymentModes .pay-chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    selectedPaymentMode = chip.dataset.mode;
   });
 });
-document.addEventListener('click', e => { if(!e.target.closest('.med-search-wrap')) billSuggest.classList.remove('show'); });
 
 function addToCart(medId){
   const it = items.find(x => x.id === medId);
@@ -718,13 +759,19 @@ document.getElementById('completeSaleBtn').addEventListener('click', async () =>
   const {sub, disc, tax, total} = updateSummary();
   const payload = {
     customer: document.getElementById('billCustomer').value.trim() || 'Walk-in customer',
+    customerPhone: document.getElementById('billPhone').value.trim(),
+    paymentMode: selectedPaymentMode,
     items: cart.map(c => ({medId:c.medId, name:c.name, batch:c.batch, qty:c.qty, price:c.price})),
     subtotal: sub, discount: disc, tax, total
   };
   try{
     const bill = await api('/bills', {method:'POST', body: JSON.stringify(payload)});
     showReceipt(bill);
-    cart = []; document.getElementById('billCustomer').value=''; document.getElementById('billDiscount').value=0; document.getElementById('billTax').value=0;
+    cart = []; document.getElementById('billCustomer').value=''; document.getElementById('billPhone').value='';
+    document.getElementById('billDiscount').value=0; document.getElementById('billTax').value=0;
+    document.querySelectorAll('#paymentModes .pay-chip').forEach(c => c.classList.remove('active'));
+    document.querySelector('#paymentModes .pay-chip[data-mode="Cash"]').classList.add('active');
+    selectedPaymentMode = 'Cash';
     await loadAll();
   }catch(err){ toast('Sale failed: ' + err.message); }
 });
@@ -747,6 +794,48 @@ function renderBillHistory(){
     const b = bills.find(x => x.id === btn.dataset.view); if(b) showReceipt(b);
   }));
 }
+function buildReceiptText(bill){
+  const lines = [];
+  lines.push('MedStock Receipt');
+  lines.push(new Date(bill.bill_date || Date.now()).toLocaleString('en-IN'));
+  lines.push('Customer: ' + bill.customer);
+  lines.push('---');
+  bill.items.forEach(it => lines.push(`${it.name} x${it.qty} = ${fmtMoney(it.price*it.qty)}`));
+  lines.push('---');
+  lines.push('Subtotal: ' + fmtMoney(bill.subtotal));
+  lines.push('Discount: -' + fmtMoney(bill.discount));
+  lines.push('Tax: +' + fmtMoney(bill.tax));
+  lines.push('Total: ' + fmtMoney(bill.total));
+  lines.push('Payment mode: ' + (bill.payment_mode || 'Cash'));
+  lines.push('Thank you!');
+  return lines.join('\n');
+}
+
+function sendReceiptWhatsApp(bill){
+  const text = encodeURIComponent(buildReceiptText(bill));
+  let phone = (bill.customer_phone || '').replace(/\D/g, '');
+  if(phone && phone.length === 10) phone = '91' + phone; // assume Indian number if no country code given
+  const url = phone ? `https://wa.me/${phone}?text=${text}` : `https://wa.me/?text=${text}`;
+  window.open(url, '_blank');
+}
+
+function saveReceiptPDF(bill){
+  if(!window.jspdf){ toast('PDF library did not load — try again in a moment.'); return; }
+  const { jsPDF } = window.jspdf;
+  const textLines = buildReceiptText(bill).split('\n');
+  const pageHeight = 90 + textLines.length * 15;
+  const doc = new jsPDF({ unit: 'pt', format: [300, pageHeight] });
+  let y = 32;
+  doc.setFont('helvetica', 'bold'); doc.setFontSize(15);
+  doc.text('MedStock', 20, y); y += 22;
+  doc.setFont('courier', 'normal'); doc.setFontSize(10);
+  textLines.slice(1).forEach(line => {
+    const wrapped = doc.splitTextToSize(line, 260);
+    wrapped.forEach(w => { doc.text(w, 20, y); y += 14; });
+  });
+  doc.save(`receipt-${bill.id || Date.now()}.pdf`);
+}
+
 function showReceipt(bill){
   const content = document.getElementById('receiptContent');
   content.innerHTML = `
@@ -760,14 +849,19 @@ function showReceipt(bill){
     <div class="rline"><span>Discount</span><span>−${fmtMoney(bill.discount)}</span></div>
     <div class="rline"><span>Tax</span><span>+${fmtMoney(bill.tax)}</span></div>
     <div class="rline" style="font-weight:600; font-size:14px; margin-top:6px;"><span>Total</span><span>${fmtMoney(bill.total)}</span></div>
+    <div class="rline"><span>Payment mode</span><span>${escapeHtml(bill.payment_mode || 'Cash')}</span></div>
     <hr><div style="text-align:center; margin-top:6px;">Thank you</div>
-    <div style="display:flex; gap:8px; margin-top:16px;">
-      <button class="btn btn-sm" id="closeReceiptBtn" style="flex:1; justify-content:center;">Close</button>
-      <button class="btn btn-sm btn-primary" id="printReceiptBtn" style="flex:1; justify-content:center;">Print</button>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:16px;">
+      <button class="btn btn-sm" id="closeReceiptBtn" style="justify-content:center;">Close</button>
+      <button class="btn btn-sm btn-primary" id="printReceiptBtn" style="justify-content:center;">Print</button>
+      <button class="btn btn-sm" id="pdfReceiptBtn" style="justify-content:center;">Save PDF</button>
+      <button class="btn btn-sm" id="waReceiptBtn" style="justify-content:center; color:#25D366; border-color:#25D366;">WhatsApp</button>
     </div>`;
   document.getElementById('receiptModal').classList.add('show');
   document.getElementById('closeReceiptBtn').addEventListener('click', () => document.getElementById('receiptModal').classList.remove('show'));
   document.getElementById('printReceiptBtn').addEventListener('click', () => window.print());
+  document.getElementById('pdfReceiptBtn').addEventListener('click', () => saveReceiptPDF(bill));
+  document.getElementById('waReceiptBtn').addEventListener('click', () => sendReceiptWhatsApp(bill));
 }
 document.getElementById('receiptModal').addEventListener('click', e => { if(e.target.id === 'receiptModal') e.target.classList.remove('show'); });
 
@@ -887,6 +981,15 @@ function renderReview(){
 document.getElementById('addRowBtn').addEventListener('click', () => {
   extractedRows.push({rid:'r'+(rowCounter++), name:'', batch:'', hsn:'', drugCode:'', qty:0, purchase:0, sell:0, expiry:''});
   renderReview();
+});
+document.getElementById('clearReviewBtn').addEventListener('click', () => {
+  if(extractedRows.length === 0) return;
+  if(!confirm(`Discard all ${extractedRows.length} row(s) from this review? Nothing has been saved yet, so this just clears the screen.`)) return;
+  extractedRows = [];
+  document.getElementById('reviewSection').style.display = 'none';
+  document.getElementById('importStatus').textContent = '';
+  document.getElementById('fileInput').value = '';
+  document.getElementById('jsonFileInput').value = '';
 });
 document.getElementById('commitImportBtn').addEventListener('click', async () => {
   const supplier = document.getElementById('importSupplier').value.trim();

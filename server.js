@@ -214,7 +214,7 @@ app.get('/api/bills', async (req, res) => {
 app.post('/api/bills', async (req, res) => {
   const client = await pool.connect();
   try {
-    const { customer, items, subtotal, discount, tax, total } = req.body;
+    const { customer, customerPhone, paymentMode, items, subtotal, discount, tax, total } = req.body;
     if (!Array.isArray(items) || !items.length) return res.status(400).json({ error: 'items required' });
 
     await client.query('BEGIN');
@@ -230,8 +230,8 @@ app.post('/api/bills', async (req, res) => {
 
     const billId = newId('b');
     await client.query(
-      `INSERT INTO bills (id, customer, subtotal, discount, tax, total) VALUES ($1,$2,$3,$4,$5,$6)`,
-      [billId, customer || 'Walk-in customer', subtotal || 0, discount || 0, tax || 0, total || 0]
+      `INSERT INTO bills (id, customer, customer_phone, payment_mode, subtotal, discount, tax, total) VALUES ($1,$2,$3,$4,$5,$6,$7,$8)`,
+      [billId, customer || 'Walk-in customer', customerPhone || '', paymentMode || 'Cash', subtotal || 0, discount || 0, tax || 0, total || 0]
     );
     for (const it of items) {
       await client.query(
