@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <style>
   :root{
     --bg:#F5F6F1; --surface:#FFFFFF; --ink:#16332C; --ink-soft:#4A5C56;
@@ -324,10 +325,14 @@
           <label>Payment mode</label>
           <div class="payment-modes" id="paymentModes">
             <div class="pay-chip active" data-mode="Cash"><span class="pay-dot" style="background:#8A8175;"></span>Cash</div>
-            <div class="pay-chip" data-mode="UPI"><span class="pay-dot" style="background:#2E7D6B;"></span>UPI</div>
-            <div class="pay-chip" data-mode="PhonePe"><span class="pay-dot" style="background:#5F259F;"></span>PhonePe</div>
-            <div class="pay-chip" data-mode="Google Pay"><span class="pay-dot" style="background:#4285F4;"></span>Google Pay</div>
-            <div class="pay-chip" data-mode="Paytm"><span class="pay-dot" style="background:#00BAF2;"></span>Paytm</div>
+            <div class="pay-chip" data-mode="UPI" data-qr="1"><span class="pay-dot" style="background:#2E7D6B;"></span>UPI</div>
+            <div class="pay-chip" data-mode="PhonePe" data-qr="1"><span class="pay-dot" style="background:#5F259F;"></span>PhonePe</div>
+            <div class="pay-chip" data-mode="Google Pay" data-qr="1"><span class="pay-dot" style="background:#4285F4;"></span>Google Pay</div>
+            <div class="pay-chip" data-mode="Paytm" data-qr="1"><span class="pay-dot" style="background:#00BAF2;"></span>Paytm</div>
+          </div>
+          <div style="display:flex; gap:6px; margin-top:8px;">
+            <input id="merchantUpiId" placeholder="yourshop@upi (for QR codes)" style="flex:1; padding:7px 10px; border-radius:7px; border:1px solid var(--border); font-size:12.5px; background:var(--bg);">
+            <button class="btn btn-sm" id="saveUpiBtn">Save</button>
           </div>
         </div>
         <div class="summary-line"><span>Subtotal</span><span class="mono" id="sumSub">₹0</span></div>
@@ -424,6 +429,17 @@
 <div class="modal-backdrop" id="receiptModal">
   <div class="receipt" id="receiptContent"></div>
 </div>
+
+<div class="modal-backdrop" id="qrModal">
+  <div class="modal" style="max-width:320px; text-align:center;">
+    <h2 id="qrModeLabel" style="margin-bottom:4px;">Scan to pay</h2>
+    <p style="font-size:13px; color:var(--ink-soft); margin:0 0 18px;">Amount: <strong id="qrAmount" class="mono">₹0</strong></p>
+    <div id="qrCodeBox" style="display:flex; justify-content:center; margin-bottom:16px;"></div>
+    <p style="font-size:12px; color:var(--ink-soft); margin:0 0 18px;">Scan with any UPI app — GPay, PhonePe, Paytm, or your bank's app.</p>
+    <button class="btn" id="closeQrBtn" style="width:100%; justify-content:center;">Close</button>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script>
@@ -697,11 +713,55 @@ document.addEventListener('click', e => {
 });
 
 let selectedPaymentMode = 'Cash';
+let merchantUpiId = '';
+
+async function loadUpiSetting(){
+  try{
+    const data = await api('/settings/upi');
+    merchantUpiId = data.upiId || '';
+    document.getElementById('merchantUpiId').value = merchantUpiId;
+  }catch(e){ /* not fatal — QR just won't work until it's set */ }
+}
+
+document.getElementById('saveUpiBtn').addEventListener('click', async () => {
+  const val = document.getElementById('merchantUpiId').value.trim();
+  try{
+    await api('/settings/upi', {method:'PUT', body: JSON.stringify({upiId: val})});
+    merchantUpiId = val;
+    toast('UPI ID saved.');
+  }catch(err){ toast('Could not save: ' + err.message); }
+});
+
+function currentCartTotal(){
+  const sub = cart.reduce((s,c) => s + c.price*c.qty, 0);
+  const disc = sub * (Number(document.getElementById('billDiscount').value)||0)/100;
+  const afterDisc = sub - disc;
+  const tax = afterDisc * (Number(document.getElementById('billTax').value)||0)/100;
+  return afterDisc + tax;
+}
+
+function showPaymentQR(mode){
+  const amount = currentCartTotal();
+  if(amount <= 0){ toast('Add items to the bill before generating a payment QR.'); return; }
+  if(!merchantUpiId){ toast('Enter and save your UPI ID first (under Payment mode) to generate QR codes.'); return; }
+  document.getElementById('qrModeLabel').textContent = 'Pay via ' + mode;
+  document.getElementById('qrAmount').textContent = fmtMoney(amount);
+  const upiUri = `upi://pay?pa=${encodeURIComponent(merchantUpiId)}&pn=${encodeURIComponent('MedStock')}&am=${amount.toFixed(2)}&cu=INR&tn=${encodeURIComponent('Bill payment')}`;
+  const box = document.getElementById('qrCodeBox');
+  box.innerHTML = '';
+  if(window.QRCode){ new QRCode(box, { text: upiUri, width: 210, height: 210 }); }
+  else { box.textContent = 'QR library did not load — try refreshing.'; }
+  document.getElementById('qrModal').classList.add('show');
+}
+document.getElementById('closeQrBtn').addEventListener('click', () => document.getElementById('qrModal').classList.remove('show'));
+document.getElementById('qrModal').addEventListener('click', e => { if(e.target.id === 'qrModal') e.target.classList.remove('show'); });
+
 document.querySelectorAll('#paymentModes .pay-chip').forEach(chip => {
   chip.addEventListener('click', () => {
     document.querySelectorAll('#paymentModes .pay-chip').forEach(c => c.classList.remove('active'));
     chip.classList.add('active');
     selectedPaymentMode = chip.dataset.mode;
+    if(chip.dataset.qr === '1') showPaymentQR(selectedPaymentMode);
   });
 });
 
@@ -725,16 +785,27 @@ function renderCart(){
       <div><div class="med-name" style="font-size:13.5px;">${escapeHtml(c.name)}</div><div class="med-meta">Batch ${escapeHtml(c.batch||'—')} · max ${c.available}</div></div>
       <input type="number" min="1" max="${c.available}" value="${c.qty}" data-qty="${idx}">
       <input type="number" min="0" step="0.01" value="${c.price}" data-price="${idx}">
-      <div class="mono" style="text-align:right;">${fmtMoney(c.price * c.qty)}</div>
+      <div class="mono cart-amount" style="text-align:right;">${fmtMoney(c.price * c.qty)}</div>
       <button class="icon-btn" data-rm="${idx}" title="Remove">✕</button>`;
     body.appendChild(row);
   });
+  // Qty/price edits update the cart data + that row's amount + the summary totals directly,
+  // without rebuilding the list — a full rebuild on every keystroke resets cursor position
+  // mid-typing (e.g. typing "20" could collapse to "2"), which is what caused wrong totals.
   body.querySelectorAll('[data-qty]').forEach(inp => inp.addEventListener('input', () => {
     const idx = Number(inp.dataset.qty); let v = Number(inp.value) || 1;
-    v = Math.max(1, Math.min(v, cart[idx].available)); cart[idx].qty = v; renderCart();
+    const clamped = Math.max(1, Math.min(v, cart[idx].available));
+    cart[idx].qty = clamped;
+    if(clamped !== v) inp.value = clamped; // only rewrite if we actually had to clamp it
+    const amountCell = inp.closest('.cart-row').querySelector('.cart-amount');
+    if(amountCell) amountCell.textContent = fmtMoney(cart[idx].price * cart[idx].qty);
+    updateSummary();
   }));
   body.querySelectorAll('[data-price]').forEach(inp => inp.addEventListener('input', () => {
-    const idx = Number(inp.dataset.price); cart[idx].price = Math.max(0, Number(inp.value) || 0); updateSummary();
+    const idx = Number(inp.dataset.price); cart[idx].price = Math.max(0, Number(inp.value) || 0);
+    const amountCell = inp.closest('.cart-row').querySelector('.cart-amount');
+    if(amountCell) amountCell.textContent = fmtMoney(cart[idx].price * cart[idx].qty);
+    updateSummary();
   }));
   body.querySelectorAll('[data-rm]').forEach(btn => btn.addEventListener('click', () => { cart.splice(Number(btn.dataset.rm), 1); renderCart(); }));
   updateSummary();
@@ -1129,6 +1200,7 @@ function enterApp(){
   authScreen.classList.add('hidden');
   appRoot.classList.remove('hidden');
   loadAll();
+  loadUpiSetting();
 }
 
 async function initAuth(){

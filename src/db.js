@@ -79,6 +79,13 @@ async function initDb() {
     );
   `);
 
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS settings (
+      key TEXT PRIMARY KEY,
+      value TEXT DEFAULT ''
+    );
+  `);
+
   await pool.query(`CREATE INDEX IF NOT EXISTS idx_items_expiry ON items(expiry);`);
   await pool.query(`CREATE INDEX IF NOT EXISTS idx_bills_date ON bills(bill_date);`);
   await pool.query(`CREATE UNIQUE INDEX IF NOT EXISTS idx_items_name_batch ON items (lower(name), batch);`);

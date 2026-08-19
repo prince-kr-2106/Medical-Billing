@@ -97,7 +97,28 @@ app.post('/api/auth/change-password', requireAuth, async (req, res) => {
 });
 
 // Everything below this line requires a logged-in session.
-app.use(['/api/inventory', '/api/bills', '/api/reports'], requireAuth);
+app.use(['/api/inventory', '/api/bills', '/api/reports', '/api/settings'], requireAuth);
+
+/* ---------------- SETTINGS ---------------- */
+
+app.get('/api/settings/upi', async (req, res) => {
+  try {
+    const { rows } = await pool.query(`SELECT value FROM settings WHERE key = 'upi_id'`);
+    res.json({ upiId: rows.length ? rows[0].value : '' });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
+
+app.put('/api/settings/upi', async (req, res) => {
+  try {
+    const upiId = (req.body.upiId || '').trim();
+    await pool.query(
+      `INSERT INTO settings (key, value) VALUES ('upi_id', $1)
+       ON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value`,
+      [upiId]
+    );
+    res.json({ upiId });
+  } catch (err) { res.status(500).json({ error: err.message }); }
+});
 
 /* ---------------- INVENTORY ---------------- */
 
